@@ -13,7 +13,7 @@ def getLetterboxdMovieDetails(film, year):
         letterBoxdData['rating'] = filmDetails.rating.split(" ")[0]
         letterBoxdData['genre'] = filmDetails.genres[0]
     except:
-        print("Something went wrong with %s %s!", film, year)
+        print("Something went wrong with", film, " ", year, "!")
 
     return letterBoxdData
     

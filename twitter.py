@@ -1,6 +1,6 @@
 import pandas as pd
 import snscrape.modules.twitter as sntwitter
-from sentimentAnalysis import conductSentimentAnalysis
+from SentimentAnalysis import conductSentimentAnalysis
 
 # How many tweets to get
 numberOfTweets = 10
