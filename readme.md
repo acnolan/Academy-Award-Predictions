@@ -1,8 +1,4 @@
 ### TODO
-- Command line arguments for main function
-    - Regenerate web scraping data
-    - Feature flags (use/ignore twitter, letterboxd, etc...)
-- Store all data (full 13 columns) as csv
 - Add print statements to show progression in generating data (so it doesn't look frozen)
 - Machine learning the data
 
