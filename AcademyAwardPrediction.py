@@ -1,8 +1,10 @@
 import argparse
+import time
+from numpy import nan 
 import pandas as pd
+from unidecode import unidecode
 from Letterboxd import getLetterboxdMovieDetails
 from Twitter import getTwitterData
-#import sklearn
 
 # Set up command line argument parsing and -h/--help flags
 parser = argparse.ArgumentParser(
@@ -21,9 +23,9 @@ def rebuildTable():
 
     df2 = df.head(5)
 
-    filmList = df2['film'].to_list()
-    yearList = df2['year_film'].to_list()
-    categoryList = df2['category'].to_list()
+    filmList = df['film'].to_list()
+    yearList = df['year_film'].to_list()
+    categoryList = df['category'].to_list()
 
     ratingList = []
     genreList = []
@@ -31,26 +33,42 @@ def rebuildTable():
     subjectivity = []
     likes = []
     retweets = []
-
+    
+    start = time.time()
+    
     for i, film in enumerate(filmList):
-        letterBoxdData = getLetterboxdMovieDetails(film, yearList[i])
-        twitterData = getTwitterData(film)
-        ratingList.append(letterBoxdData['rating'])
-        genreList.append(letterBoxdData['genre'])
-        sentiments.append(twitterData['sentiment'])
-        subjectivity.append(twitterData['subjectivity'])
-        likes.append(twitterData['likeCount'])
-        retweets.append(twitterData['retweetCount'])
+        if not pd.isnull(film):
+            letterBoxdData = getLetterboxdMovieDetails(unidecode(film), yearList[i])
+            twitterData = getTwitterData(unidecode(film))
+            ratingList.append(letterBoxdData['rating'])
+            genreList.append(letterBoxdData['genre'])
+            sentiments.append(twitterData['sentiment'])
+            subjectivity.append(twitterData['subjectivity'])
+            likes.append(twitterData['likeCount'])
+            retweets.append(twitterData['retweetCount'])
+        else:
+            ratingList.append('')
+            genreList.append('')
+            sentiments.append(nan)
+            subjectivity.append(nan)
+            likes.append(nan)
+            retweets.append(nan)
+        
+        end = time.time()
+        print("{} out of {}, time elapsed: {:.2f} seconds".format(i, len(filmList), end - start))
 
-    df2['rating'] = ratingList
-    df2['genre'] = genreList
-    df2['sentiment'] = sentiments
-    df2['subjectivity'] = subjectivity
-    df2['average likes'] = likes
-    df2['average retweets'] = retweets
+    end = time.time()
+    print("Total time to rebuild data: {:.2f} seconds".format(end - start))
 
-    print(df2)
-    df2.to_csv('oscar_nominees_full_columns.csv')
+    df['rating'] = ratingList
+    df['genre'] = genreList
+    df['sentiment'] = sentiments
+    df['subjectivity'] = subjectivity
+    df['average likes'] = likes
+    df['average retweets'] = retweets
+
+    print(df)
+    df.to_csv('oscar_nominees_full_columns.csv')
 
 def engageMachineLearningAlgorithms():
     print("Todo: Machine learning!")

@@ -2,7 +2,6 @@ import pandas as pd
 from letterboxdpy import movie
 
 # Scrape letterboxd data for a course
-# May need to add some logic to make sure it is the right year for the title
 def getLetterboxdMovieDetails(film, year):
     # Setup dictionary for the letterboxd data
     letterBoxdData = {}

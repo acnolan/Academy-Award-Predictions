@@ -1,14 +1,21 @@
 ### TODO
-- Add print statements to show progression in generating data (so it doesn't look frozen)
+- Remove punctuation from titles for letterboxd
+- Cache movies so we can count if they were seen twice
+- In the cache, include a count of occurences
+- Count occurences of production company/person
+- Add counts as two more columns
+- Make sure year and movie are correct for letterboxd
+- Ignore nan rows when training the model
 - Machine learning the data
 
 
 ### Packages Used
 - Pandas
-- Tensorflow
 - letterboxdpy: https://pypi.org/project/letterboxdpy/
 - snscrape: https://github.com/JustAnotherArchivist/snscrape
 - textblob: https://pypi.org/project/textblob/
+- unidecode: https://pypi.org/project/Unidecode/
+- numpy: https://pypi.org/project/numpy/
 
 ### Sources
 1. Oscar Dataset - https://www.kaggle.com/datasets/unanimad/the-oscar-award
