@@ -1,7 +1,7 @@
 import argparse
 import pandas as pd
-from Letterboxd import getAllLetterboxdRatings
-from Twitter import getAllTwitterData
+from Letterboxd import getLetterboxdMovieDetails
+from Twitter import getTwitterData
 #import sklearn
 
 # Set up command line argument parsing and -h/--help flags
@@ -25,8 +25,29 @@ def rebuildTable():
     yearList = df2['year_film'].to_list()
     categoryList = df2['category'].to_list()
 
-    df2 = pd.concat([df2, getAllLetterboxdRatings(filmList,yearList)], axis=1)
-    df2 = pd.concat([df2, getAllTwitterData(filmList)], axis=1)
+    ratingList = []
+    genreList = []
+    sentiments = []
+    subjectivity = []
+    likes = []
+    retweets = []
+
+    for i, film in enumerate(filmList):
+        letterBoxdData = getLetterboxdMovieDetails(film, yearList[i])
+        twitterData = getTwitterData(film)
+        ratingList.append(letterBoxdData['rating'])
+        genreList.append(letterBoxdData['genre'])
+        sentiments.append(twitterData['sentiment'])
+        subjectivity.append(twitterData['subjectivity'])
+        likes.append(twitterData['likeCount'])
+        retweets.append(twitterData['retweetCount'])
+
+    df2['rating'] = ratingList
+    df2['genre'] = genreList
+    df2['sentiment'] = sentiments
+    df2['subjectivity'] = subjectivity
+    df2['average likes'] = likes
+    df2['average retweets'] = retweets
 
     print(df2)
     df2.to_csv('oscar_nominees_full_columns.csv')

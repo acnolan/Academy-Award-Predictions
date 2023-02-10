@@ -5,7 +5,7 @@ from SentimentAnalysis import conductSentimentAnalysis
 # How many tweets to get
 numberOfTweets = 10
 
-# Get twitter data
+# Get twitter data for a course
 def getTwitterData(film):
     # Setup counters for the film
     twitterData = {}
@@ -38,19 +38,3 @@ def incrementTwitterDataValues(tweet, twitterData):
     twitterData['likeCount'] += tweet.likeCount / numberOfTweets
     twitterData['retweetCount'] += tweet.retweetCount / numberOfTweets
     return twitterData
-
-# Get twitter data for all films
-def getAllTwitterData(filmList):
-    sentiments = []
-    subjectivity = []
-    likes = []
-    retweets = []
-
-    for film in filmList:
-        twitterData = getTwitterData(film)
-        sentiments.append(twitterData['sentiment'])
-        subjectivity.append(twitterData['subjectivity'])
-        likes.append(twitterData['likeCount'])
-        retweets.append(twitterData['retweetCount'])
-    
-    return pd.DataFrame(list(zip(sentiments, subjectivity, likes, retweets)), columns=['sentiment', 'subjectivity', 'likes', 'retweets'])
