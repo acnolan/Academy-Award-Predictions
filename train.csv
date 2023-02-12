@@ -1,6 +1,6 @@
 ,year_film,year_ceremony,ceremony,category,name,film,winner,rating,genre,sentiment,subjectivity,average_likes,average_retweets,film_count,nominee_count
 0,1927,1928,1,ACTOR,Richard Barthelmess,The Noose,False,None,drama,0.2864047619047619,0.4703174603174603,1.2999999999999998,0.7,1,1
-1,1927,1928,1,ACTOR,Emil Jannings,The Last Command,True,3.97,war,0.26227777777777783,0.3092222222222222,4.2,0.8,1,1
+1,1927,1928,1,ACTOR,Emil Jannings,The Last Command,True,3.97,history,0.26227777777777783,0.3092222222222222,4.2,0.8,1,1
 2,1927,1928,1,ACTRESS,Louise Dresser,A Ship Comes In,False,2.66,drama,0.616784523809524,0.5281051587301588,3.3000000000000003,1.0,1,1
 3,1927,1928,1,ACTRESS,Janet Gaynor,7th Heaven,True,3.68,romance,0.2476904761904762,0.35860714285714285,14.2,1.5000000000000002,1,1
 4,1927,1928,1,ACTRESS,Gloria Swanson,Sadie Thompson,False,3.55,romance,0.5470833333333334,0.3940277777777777,11.799999999999999,2.1,1,1

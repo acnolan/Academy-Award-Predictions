@@ -1,6 +1,4 @@
 ### TODO
-- Remove punctuation from titles for letterboxd
-- Make sure year and movie are correct for letterboxd
 - Ignore nan rows when training the model
 - Machine learning the data
 

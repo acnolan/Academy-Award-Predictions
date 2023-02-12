@@ -113,7 +113,8 @@ def rebuildTable():
     df['nominee_count'] = nomineeCount
 
     print(df)
-    df.to_csv('oscar_nominees_full_columns.csv')
+    df.loc[df['ceremony'] == 95].to_csv('test.csv')
+    df.loc[df['ceremony'] != 95].to_csv('train.csv')
 
 def engageMachineLearningAlgorithms():
     print("Todo: Machine learning!")
