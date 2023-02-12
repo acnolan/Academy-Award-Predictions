@@ -2,6 +2,7 @@ import argparse
 import time
 from numpy import nan 
 import pandas as pd
+import string
 from unidecode import unidecode
 from Letterboxd import getLetterboxdMovieDetails
 from Twitter import getTwitterData
@@ -23,6 +24,7 @@ def countNominationFrequency(filmList, nameList):
     films = {}
     nominees = {}
 
+    # Count
     for i, film in enumerate(filmList):
         if film in films:
             films[film] += 1
@@ -40,7 +42,7 @@ def countNominationFrequency(filmList, nameList):
 def rebuildTable():
     df1 = pd.read_csv("./oscar_nominees.csv")
 
-    df = df1.head(50)
+    df = df1.head(5)
 
     filmList = df['film'].to_list()
     yearList = df['year_film'].to_list()
@@ -54,14 +56,14 @@ def rebuildTable():
     retweets = []
     filmCount = []
     nomineeCount = []
-    
-    start = time.time()
 
     # Store movies we have already seen (so we don't have to webscrape for them multiple times)
     filmDict = {}
 
     # Store counts of nominees
     filmFreq, nomineeFreq = countNominationFrequency(filmList, nameList)
+
+    start = time.time()
     
     for i, film in enumerate(filmList):
         if not pd.isnull(film):
@@ -70,7 +72,7 @@ def rebuildTable():
                 twitterData = filmDict[film]['twitterData']
                 filmDict[film]['count'] += 1
             else:
-                letterBoxdData = getLetterboxdMovieDetails(unidecode(film), yearList[i])
+                letterBoxdData = getLetterboxdMovieDetails(unidecode(film).translate(str.maketrans('', '', string.punctuation)), yearList[i])
                 twitterData = getTwitterData(unidecode(film))
                 filmDict[film] = {}
                 filmDict[film]['letterBoxdData'] = letterBoxdData

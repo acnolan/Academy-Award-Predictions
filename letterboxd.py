@@ -7,12 +7,19 @@ def getLetterboxdMovieDetails(film, year):
     letterBoxdData = {}
     letterBoxdData['rating'] = 0
     letterBoxdData['genre'] = 0
-
+    
+    # Try to get the movie at the requested year
+    # If it goes wrong just get the movie
     try:
-        filmDetails = movie.Movie(film.lower())
+        filmDetails = movie.Movie(film.lower(), year)
         letterBoxdData['rating'] = filmDetails.rating.split(" ")[0]
         letterBoxdData['genre'] = filmDetails.genres[0]
     except:
-        print("Something went wrong with", film, " ", year, "!")
+        try:
+            filmDetails = movie.Movie(film.lower())
+            letterBoxdData['rating'] = filmDetails.rating.split(" ")[0]
+            letterBoxdData['genre'] = filmDetails.genres[0]
+        except:
+            print("Something went wrong with", film, " ", year, "!")
 
     return letterBoxdData
