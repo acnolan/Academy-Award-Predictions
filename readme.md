@@ -1,9 +1,5 @@
 ### TODO
 - Remove punctuation from titles for letterboxd
-- Cache movies so we can count if they were seen twice
-- In the cache, include a count of occurences
-- Count occurences of production company/person
-- Add counts as two more columns
 - Make sure year and movie are correct for letterboxd
 - Ignore nan rows when training the model
 - Machine learning the data

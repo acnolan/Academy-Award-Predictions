@@ -14,14 +14,14 @@ def getTwitterData(film):
     twitterData['likeCount'] = 0
     twitterData['retweetCount'] = 0
 
-    # Analyze 50 tweet results about the film name + oscars
+    # Analyze tweet results about the film name + oscars
     scraper = sntwitter.TwitterSearchScraper(film + " oscars")
     for i, tweet in enumerate(scraper.get_items()):
         twitterData = incrementTwitterDataValues(tweet, twitterData)
         if i == numberOfTweets/2:
             break
 
-    # Also do 50 tweets of film name + Academy Awards
+    # Also do tweets of film name + Academy Awards
     scraper = sntwitter.TwitterSearchScraper(film + " academy awards")
     for i, tweet in enumerate(scraper.get_items()):
         twitterData = incrementTwitterDataValues(tweet, twitterData)

@@ -17,15 +17,34 @@ parser.add_argument('-b', '--build', action='store_true')
 # Set Pandas options
 pd.set_option('display.max_columns', None)
 
+# Count the frequencies of the film and nominees occuring
+def countNominationFrequency(filmList, nameList):
+    # Set up the frequency dicts
+    films = {}
+    nominees = {}
+
+    for i, film in enumerate(filmList):
+        if film in films:
+            films[film] += 1
+        else:
+            films[film] = 1
+            
+        if nameList[i] in nominees: 
+            nominees[nameList[i]] += 1
+        else: 
+            nominees[nameList[i]] = 1
+    
+    return films, nominees
+
 # Build the data table
 def rebuildTable():
-    df = pd.read_csv("./oscar_nominees.csv")
+    df1 = pd.read_csv("./oscar_nominees.csv")
 
-    df2 = df.head(5)
+    df = df1.head(50)
 
     filmList = df['film'].to_list()
     yearList = df['year_film'].to_list()
-    categoryList = df['category'].to_list()
+    nameList = df['name'].to_list()
 
     ratingList = []
     genreList = []
@@ -33,13 +52,31 @@ def rebuildTable():
     subjectivity = []
     likes = []
     retweets = []
+    filmCount = []
+    nomineeCount = []
     
     start = time.time()
+
+    # Store movies we have already seen (so we don't have to webscrape for them multiple times)
+    filmDict = {}
+
+    # Store counts of nominees
+    filmFreq, nomineeFreq = countNominationFrequency(filmList, nameList)
     
     for i, film in enumerate(filmList):
         if not pd.isnull(film):
-            letterBoxdData = getLetterboxdMovieDetails(unidecode(film), yearList[i])
-            twitterData = getTwitterData(unidecode(film))
+            if film in filmDict:
+                letterBoxdData = filmDict[film]['letterBoxdData']
+                twitterData = filmDict[film]['twitterData']
+                filmDict[film]['count'] += 1
+            else:
+                letterBoxdData = getLetterboxdMovieDetails(unidecode(film), yearList[i])
+                twitterData = getTwitterData(unidecode(film))
+                filmDict[film] = {}
+                filmDict[film]['letterBoxdData'] = letterBoxdData
+                filmDict[film]['twitterData'] = twitterData 
+                filmDict[film]['count'] = 1
+
             ratingList.append(letterBoxdData['rating'])
             genreList.append(letterBoxdData['genre'])
             sentiments.append(twitterData['sentiment'])
@@ -54,18 +91,24 @@ def rebuildTable():
             likes.append(nan)
             retweets.append(nan)
         
+        filmCount.append(filmFreq[film])
+        nomineeCount.append(nomineeFreq[nameList[i]])
+        
         end = time.time()
-        print("{} out of {}, time elapsed: {:.2f} seconds".format(i, len(filmList), end - start))
+        print("{} out of {}, time elapsed: {:.2f} seconds".format(i+1, len(filmList), end - start))
 
     end = time.time()
     print("Total time to rebuild data: {:.2f} seconds".format(end - start))
 
+    # Add columns to the data table
     df['rating'] = ratingList
     df['genre'] = genreList
     df['sentiment'] = sentiments
     df['subjectivity'] = subjectivity
-    df['average likes'] = likes
-    df['average retweets'] = retweets
+    df['average_likes'] = likes
+    df['average_retweets'] = retweets
+    df['film_count'] = filmCount
+    df['nominee_count'] = nomineeCount
 
     print(df)
     df.to_csv('oscar_nominees_full_columns.csv')
