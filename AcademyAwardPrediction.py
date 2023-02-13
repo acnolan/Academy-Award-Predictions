@@ -40,9 +40,7 @@ def countNominationFrequency(filmList, nameList):
 
 # Build the data table
 def rebuildTable():
-    df1 = pd.read_csv("./oscar_nominees.csv")
-
-    df = df1.head(5)
+    df = pd.read_csv("./oscar_nominees.csv")
 
     filmList = df['film'].to_list()
     yearList = df['year_film'].to_list()
@@ -112,7 +110,6 @@ def rebuildTable():
     df['film_count'] = filmCount
     df['nominee_count'] = nomineeCount
 
-    print(df)
     df.loc[df['ceremony'] == 95].to_csv('test.csv')
     df.loc[df['ceremony'] != 95].to_csv('train.csv')
 

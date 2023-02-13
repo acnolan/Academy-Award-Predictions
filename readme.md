@@ -3,6 +3,13 @@
 - Machine learning the data
 
 
+### Running the code
+
+### Rebuilding the test and train data
+- Run `python AcademyAwardPrediction.py -b`
+- The -b flag runs the rebuild code and web scrape
+- Note: this takes a long time, about 6 hours
+
 ### Packages Used
 - Pandas
 - letterboxdpy: https://pypi.org/project/letterboxdpy/
