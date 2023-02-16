@@ -6,6 +6,7 @@ import string
 from unidecode import unidecode
 from Letterboxd import getLetterboxdMovieDetails
 from Twitter import getTwitterData
+from MachineLearning import loadData
 
 # Set up command line argument parsing and -h/--help flags
 parser = argparse.ArgumentParser(
@@ -13,7 +14,8 @@ parser = argparse.ArgumentParser(
     description = 'Runs some machine learning on historical Academy Award data as well as Letterboxd and Twitter info on the films.')
 
 # Set up flags for rebuilding the csv with letterboxd and twitter data
-parser.add_argument('-b', '--build', action='store_true')
+parser.add_argument('-b', '--build', action='store_true', help='Runs the web scraping code to build the data tables and writes to csv. Note: This can take several hours...')
+parser.add_argument('-v', '--visualize', action='store_true', help='Runs code to visualize the data and displays plots.')
 
 # Set Pandas options
 pd.set_option('display.max_columns', None)
@@ -114,7 +116,7 @@ def rebuildTable():
     df.loc[df['ceremony'] != 95].to_csv('train.csv')
 
 def engageMachineLearningAlgorithms():
-    print("Todo: Machine learning!")
+    loadData()
 
 
 # Optional -b flag for building
@@ -124,6 +126,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.build:
         rebuildTable()
+    if args.visualize:
+        print("todo: visualize data in the dataframes")
 
     # Run the fancy machine learning?
     engageMachineLearningAlgorithms()

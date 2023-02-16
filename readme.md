@@ -17,6 +17,7 @@
 - textblob: https://pypi.org/project/textblob/
 - unidecode: https://pypi.org/project/Unidecode/
 - numpy: https://pypi.org/project/numpy/
+- scikit-learn: https://scikit-learn.org/
 
 ### Sources
 1. Oscar Dataset - https://www.kaggle.com/datasets/unanimad/the-oscar-award
