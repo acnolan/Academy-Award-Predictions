@@ -34,8 +34,8 @@ def testNaiveBayes(gnb, df, original):
 
     df = df.drop(['winner'], axis=1)
 
-    predictionDictionary['predictions'] = gnb.predict(df)
-    predictionProbabity = gnb.predict_proba(df)
+    predictionDictionary['predictions'] = gnb.predict(df.values)
+    predictionProbabity = gnb.predict_proba(df.values)
 
     predictionDictionary['probability_loses'] = [p[0] for p in predictionProbabity]
     predictionDictionary['probability_wins'] = [p[1] for p in predictionProbabity]

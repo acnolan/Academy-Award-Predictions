@@ -3,7 +3,7 @@ from numpy import nan
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
 from NaiveBayes import trainNaiveBayes, testNaiveBayes
-from VisualizeData import plotCorrelationHeatmap, plotPairPlot
+from VisualizeData import plotCorrelationHeatmap
 
 # Run some basic preprocessing to remove null values, standardize numbers, and convert nominal variables to one hot variables
 def preprocessData(trainData, testData):
