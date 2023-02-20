@@ -3,11 +3,12 @@ from numpy import nan
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
+from sklearn.metrics import accuracy_score
 
 # Impport some classifiers to try out
 from sklearn.naive_bayes import GaussianNB
 
-# Check out: https://towardsdatascience.com/introduction-to-data-preprocessing-in-machine-learning-a9fa83a5dc9d
+# Run some basic preprocessing to remove null values, standardize numbers, and convert nominal variables to one hot variables
 def preprocessData(trainData, testData):
     # Ignore rows with missing data/NaNs in training
     # In this dataset, that is mostly rows containing data for categories we are not interested in predicting so it should be ok
@@ -25,11 +26,25 @@ def preprocessData(trainData, testData):
     trainData[featuresToScale] = std.fit_transform(trainData[featuresToScale])
     testData[featuresToScale] = std.transform(testData[featuresToScale])
 
-    # Convert categoricals to numeric values
-    # Using 1-hot encoding
-    categoricalFeatures = ['category','name','film','genre']
+    # Convert nominal categoricals to numeric values
+    # Using 1-hot encoding for genre and category, use drop_first to avoid multicollinearity
+    # Film and nominee name are already handled by frequency encoding
+    categoricalFeatures = ['category','genre']
 
-    return trainData
+    trainData = pd.get_dummies(trainData, columns=categoricalFeatures, drop_first=True)
+    testData = pd.get_dummies(testData, columns=categoricalFeatures, drop_first=True)
+
+    # Align data so the columns are ok after one hot, this may lose some data as categories have changed over time
+    # But for now this is a safe way to handle it since we will only be predicting the modern movies
+    trainData, testData = trainData.align(testData, join='inner', axis=1)
+
+    # Drop the columns we won't need
+    # We already frequency mapped them when building the dataset
+    dropableColumns = ['name','film']
+    trainData.drop(dropableColumns, axis=1, inplace=True)
+    testData.drop(dropableColumns, axis=1, inplace=True)
+
+    return trainData, testData
 
 # We won't do much with this yet, but could be good to see
 # Also good practice
@@ -39,22 +54,29 @@ def visualizeData():
 
 
 # Try out: https://www.youtube.com/watch?v=99MN-rl8jGY&ab_channel=TEW22
-def naiveBayes(df):
+def trainNaiveBayes(df):
     X = df.drop(['winner'],axis=1).values
+
     # Target column
     y = df['winner'].values
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0, test_size=0.2)
 
+    # Fit the model
     gnb = GaussianNB()
-    y_pred = gnb.fit(X_train, y_train).predict(X_test)
+    gnb.fit(X_train, y_train)
+    
+    # Test the model
+    y_pred = gnb.predict(X_test)
 
-    print("Number of mislabeled points out of a total %d points : %d" % (X_test.shape[0], (y_test != y_pred).sum()))
+    print("Accuracy {:.4}%".format(accuracy_score(y_test, y_pred)))
+    print("Number of mislabeled awards out of a total %d entries: %d" % (X_test.shape[0], (y_test != y_pred).sum()))
     return
+
+def testNaiveBayes(df):
     return
 
 def executeMachineLearning():
-    trainData = pd.read_csv("./train.csv")
-    testData = pd.read_csv("./test.csv")
-    df = preprocessData(trainData, testData)
-    #naiveBayes(df)
+    trainData, testData = preprocessData(pd.read_csv("./train.csv"), pd.read_csv("./test.csv"))
+    trainNaiveBayes(trainData)
+    testNaiveBayes(testData)
     return
