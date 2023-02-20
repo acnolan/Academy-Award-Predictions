@@ -6,7 +6,7 @@ import string
 from unidecode import unidecode
 from Letterboxd import getLetterboxdMovieDetails
 from Twitter import getTwitterData
-from MachineLearning import loadData
+from MachineLearning import executeMachineLearning
 
 # Set up command line argument parsing and -h/--help flags
 parser = argparse.ArgumentParser(
@@ -112,11 +112,11 @@ def rebuildTable():
     df['film_count'] = filmCount
     df['nominee_count'] = nomineeCount
 
-    df.loc[df['ceremony'] == 95].to_csv('test.csv')
-    df.loc[df['ceremony'] != 95].to_csv('train.csv')
+    df.loc[df['ceremony'] == 95].to_csv('train.csv')
+    df.loc[df['ceremony'] != 95].to_csv('test.csv')
 
 def engageMachineLearningAlgorithms():
-    loadData()
+    executeMachineLearning()
 
 
 # Optional -b flag for building

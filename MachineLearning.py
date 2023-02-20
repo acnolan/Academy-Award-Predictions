@@ -1,19 +1,35 @@
 import pandas as pd
+from numpy import nan
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.impute import SimpleImputer
+
 # Impport some classifiers to try out
 from sklearn.naive_bayes import GaussianNB
 
 # Check out: https://towardsdatascience.com/introduction-to-data-preprocessing-in-machine-learning-a9fa83a5dc9d
-def preprocessData():
-    df = pd.read_csv("./train.csv")
+def preprocessData(trainData, testData):
+    # Ignore rows with missing data/NaNs in training
+    # In this dataset, that is mostly rows containing data for categories we are not interested in predicting so it should be ok
+    trainData.dropna(inplace = True)
 
-    # Ignore rows with missing data/NaNs
+    # For test data, we want to predict everything, so we'll need to impute missing values
+    imputer = SimpleImputer(missing_values=nan, strategy='mean')
+    imputer = imputer.fit(testData[['rating']])
+    testData['rating'] = imputer.transform(testData[['rating']])
     
-    # Standardization of numerics
+    # Standardization of numeric columns
+    # Do we need this?
+    featuresToScale = ['rating','sentiment','subjectivity','average_likes','average_retweets']
+    std = StandardScaler()
+    trainData[featuresToScale] = std.fit_transform(trainData[featuresToScale])
+    testData[featuresToScale] = std.transform(testData[featuresToScale])
 
     # Convert categoricals to numeric values
+    # Using 1-hot encoding
+    categoricalFeatures = ['category','name','film','genre']
 
-    return df
+    return trainData
 
 # We won't do much with this yet, but could be good to see
 # Also good practice
@@ -37,6 +53,8 @@ def naiveBayes(df):
     return
 
 def executeMachineLearning():
-    df = preprocessData()
-    naiveBayes(df)
+    trainData = pd.read_csv("./train.csv")
+    testData = pd.read_csv("./test.csv")
+    df = preprocessData(trainData, testData)
+    #naiveBayes(df)
     return
