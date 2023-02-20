@@ -36,13 +36,14 @@ This code is very basic and can be optimized in the future. Once we see how it d
 ## References
 
 ### Packages Used
-- [Pandas](https://pandas.pydata.org/)
 - [letterboxdpy](https://pypi.org/project/letterboxdpy/)
+- [numpy](https://pypi.org/project/numpy/)
+- [pandas](https://pandas.pydata.org/)
+- [scikit-learn](https://scikit-learn.org/)
+- [seaborn](https://seaborn.pydata.org/installing.html)
 - [snscrape](https://github.com/JustAnotherArchivist/snscrape)
 - [textblob](https://pypi.org/project/textblob/)
 - [unidecode](https://pypi.org/project/Unidecode/)
-- [numpy](https://pypi.org/project/numpy/)
-- [scikit-learn](https://scikit-learn.org/)
 
 ### Blogs, Videos, and Guides
 1. [Oscar movie Dataset](https://www.kaggle.com/datasets/unanimad/the-oscar-award)

@@ -1,12 +1,9 @@
 import pandas as pd
 from numpy import nan
-from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
-from sklearn.metrics import accuracy_score
-
-# Impport some classifiers to try out
-from sklearn.naive_bayes import GaussianNB
+from NaiveBayes import trainNaiveBayes, testNaiveBayes
+from VisualizeData import plotCorrelationHeatmap, plotPairPlot
 
 # Run some basic preprocessing to remove null values, standardize numbers, and convert nominal variables to one hot variables
 def preprocessData(trainData, testData):
@@ -40,56 +37,54 @@ def preprocessData(trainData, testData):
 
     # Drop the columns we won't need
     # We already frequency mapped them when building the dataset
-    dropableColumns = ['name','film']
+    dropableColumns = ['year_film','year_ceremony','ceremony','name','film']
     trainData.drop(dropableColumns, axis=1, inplace=True)
     testData.drop(dropableColumns, axis=1, inplace=True)
 
+    plotCorrelationHeatmap(trainData)
+
     return trainData, testData
 
-# We won't do much with this yet, but could be good to see
-# Also good practice
-def visualizeData():
-    # Maybe make a separate file for this
+# Check which movie has the highest win probability
+# That's our winner!
+def determineWinnerFromPredictions(df):
+    winnerDict = {}
+
+    for _, row in df.iterrows():
+        # If we see a higher probability in the category, that's our new winner
+        if row['category'] in winnerDict:
+            if row['probability_wins'] > winnerDict[row['category']]['prob']:
+                d = {}
+                d['winner'] = row['film']
+                d['prob'] = row['probability_wins']
+                winnerDict[row['category']] = d
+        else:
+            d = {}
+            d['winner'] = row['film']
+            d['prob'] = row['probability_wins']
+            winnerDict[row['category']] = d
+
+    return winnerDict
+
+# Print winners
+def printWinner(winnerDict):
+    for category, value in winnerDict.items():
+        print(category, " winner is ", value['winner'], "!")
     return
 
-
-# Try out: https://www.youtube.com/watch?v=99MN-rl8jGY&ab_channel=TEW22
-def trainNaiveBayes(df):
-    X = df.drop(['winner'],axis=1).values
-
-    # Target column
-    y = df['winner'].values
-    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0, test_size=0.2)
-
-    # Fit the model
-    gnb = GaussianNB()
-    gnb.fit(X_train, y_train)
-    
-    # Test the model
-    y_pred = gnb.predict(X_test)
-
-    print("Training Accuracy {:.4}%".format(accuracy_score(y_test, y_pred)))
-    print("Number of mislabeled training awards out of a total %d entries: %d" % (X_test.shape[0], (y_test != y_pred).sum()))
-    return gnb
-
-# Run the Naive Bayes model on the unknown data
-# To avoid multiples in a same category winning, we'll also record their probabilities
-# We can call the winner the higher probability
-def testNaiveBayes(gnb, df, original):
-    df = df.drop(['winner'], axis=1)
-    predictions = gnb.predict(df)
-    predictionProbabity = gnb.predict_proba(df)
-
-    # TODO: maybe something better than printing
-    for i, p in enumerate(predictions):
-        print("Category: ", original['category'][i], "Movie: ", original['film'][i], ", wins: ", p, ", probability: ", predictionProbabity[i])
-    
-    return
-
+# Train and run the machine learning algorithms
 def executeMachineLearning():
+    # Load original raw data
     trainOriginal = pd.read_csv("./train.csv")
     testOriginal = pd.read_csv("./test.csv")
+
+    # Preprocess the data
     trainData, testData = preprocessData(trainOriginal, testOriginal)
-    gnb = trainNaiveBayes(trainData)
-    testNaiveBayes(gnb, testData, testOriginal)
+    
+    # Try out naive bayes
+    gnb, gnb_accuracy = trainNaiveBayes(trainData)
+    predicted_gnb = testNaiveBayes(gnb, testData, testOriginal)
+
+    # Output the winners
+    printWinner(determineWinnerFromPredictions(predicted_gnb))
     return
