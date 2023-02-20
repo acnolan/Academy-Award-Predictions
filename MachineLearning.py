@@ -28,6 +28,10 @@ def preprocessData(trainData, testData):
     # Film and nominee name are already handled by frequency encoding
     categoricalFeatures = ['category','genre']
 
+    # Make the 'category' column lower case to be more standardized
+    trainData['category'] = trainData['category'].str.lower()
+    testData['category'] = testData['category'].str.lower()
+
     trainData = pd.get_dummies(trainData, columns=categoricalFeatures, drop_first=True)
     testData = pd.get_dummies(testData, columns=categoricalFeatures, drop_first=True)
 
