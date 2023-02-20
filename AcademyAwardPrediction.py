@@ -3,6 +3,7 @@ import pandas as pd
 
 from BuildData import rebuildTable
 from MachineLearning import executeMachineLearning
+from VisualizeData import setVisualizeFlag
 
 # Set up command line argument parsing and -h/--help flags
 parser = argparse.ArgumentParser(
@@ -25,7 +26,7 @@ if __name__ == "__main__":
     if args.build:
         rebuildTable()
     if args.visualize:
-        print("todo: visualize data in the dataframes")
+        setVisualizeFlag()
 
     # Run the fancy machine learning?
     executeMachineLearning()

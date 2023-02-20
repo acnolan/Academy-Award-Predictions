@@ -2,9 +2,12 @@ import pandas as pd
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
+from VisualizeData import plotConfusionMatrix
 
 # Train a Gaussian Naive Bayes model
 def trainNaiveBayes(df):
+    print('Starting Naive Bayes')
+
     X = df.drop(['winner'],axis=1).values
 
     # Target column
@@ -20,8 +23,11 @@ def trainNaiveBayes(df):
     
     accuracy = accuracy_score(y_test, y_pred)
 
-    print("Training Accuracy {:.4}%".format(accuracy))
+    print("Training Accuracy for Naive Bayes {:.4}%".format(accuracy))
     print("Number of mislabeled training awards out of a total %d entries: %d" % (X_test.shape[0], (y_test != y_pred).sum()))
+
+    plotConfusionMatrix(y_test, y_pred)
+
     return gnb, accuracy
 
 # Run the Naive Bayes model on the unknown data

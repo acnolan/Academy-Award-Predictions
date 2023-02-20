@@ -3,6 +3,7 @@ from numpy import nan
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
 from NaiveBayes import trainNaiveBayes, testNaiveBayes
+from RandomForest import trainRandomForest, testRandomForest
 from VisualizeData import plotCorrelationHeatmap
 
 # Run some basic preprocessing to remove null values, standardize numbers, and convert nominal variables to one hot variables
@@ -89,6 +90,10 @@ def executeMachineLearning():
     gnb, gnb_accuracy = trainNaiveBayes(trainData)
     predicted_gnb = testNaiveBayes(gnb, testData, testOriginal)
 
+    # Try out random forest
+    rf, rf_accuracy = trainRandomForest(trainData)
+    predicted_rf = testRandomForest(rf, testData, testOriginal)
+
     # Output the winners
-    printWinner(determineWinnerFromPredictions(predicted_gnb))
+    #printWinner(determineWinnerFromPredictions(predicted_gnb))
     return

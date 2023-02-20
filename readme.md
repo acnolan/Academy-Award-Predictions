@@ -7,11 +7,11 @@ A basic data collection and prediction pipeline for the Academy Awards.
 A priori assumption: Past conditions still hold true for the Academy
 
 ## TODO
-- Naive Bayes the data
 - Random forest the data
+- Logistic Regression the data
 - SVM the data
-- Some other fun prediction model on the data
-- Some sort of data visualization
+- KNN the data
+- Flag to show or not show visualizations
 
 
 ## Running the code
@@ -19,6 +19,9 @@ A priori assumption: Past conditions still hold true for the Academy
 ### Only run machine learning
 - Make sure test.csv and train.csv are in the same directory as AcademyAwardPrediction.py
 - Run `python AcademyAwardPrediction.py`
+
+### Run machine learning with data visualizations
+- Use the -v flag `python AcademyAwardPrediction.py -v`
 
 ### Rebuild the dataset
 - Run `python AcademyAwardPrediction.py -b`
