@@ -7,7 +7,7 @@ A basic data collection and prediction pipeline for the Academy Awards.
 A priori assumption: Past conditions still hold true for the Academy
 
 ## TODO
-- Random forest the data
+- Fix overfitting on Random Forest?
 - Logistic Regression the data
 - SVM the data
 - KNN the data
@@ -35,6 +35,8 @@ This code is very basic and can be optimized in the future. Once we see how it d
 - Collect data from web search like google or bing
 - Collect data from other social media (Reddit?)
 - Train models for different categories instead of general
+- Try out a neural net or some deep learning
+- Fix overfitting on some models
 
 ## References
 
