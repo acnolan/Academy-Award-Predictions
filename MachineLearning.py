@@ -68,15 +68,28 @@ def trainNaiveBayes(df):
     # Test the model
     y_pred = gnb.predict(X_test)
 
-    print("Accuracy {:.4}%".format(accuracy_score(y_test, y_pred)))
-    print("Number of mislabeled awards out of a total %d entries: %d" % (X_test.shape[0], (y_test != y_pred).sum()))
-    return
+    print("Training Accuracy {:.4}%".format(accuracy_score(y_test, y_pred)))
+    print("Number of mislabeled training awards out of a total %d entries: %d" % (X_test.shape[0], (y_test != y_pred).sum()))
+    return gnb
 
-def testNaiveBayes(df):
+# Run the Naive Bayes model on the unknown data
+# To avoid multiples in a same category winning, we'll also record their probabilities
+# We can call the winner the higher probability
+def testNaiveBayes(gnb, df, original):
+    df = df.drop(['winner'], axis=1)
+    predictions = gnb.predict(df)
+    predictionProbabity = gnb.predict_proba(df)
+
+    # TODO: maybe something better than printing
+    for i, p in enumerate(predictions):
+        print("Category: ", original['category'][i], "Movie: ", original['film'][i], ", wins: ", p, ", probability: ", predictionProbabity[i])
+    
     return
 
 def executeMachineLearning():
-    trainData, testData = preprocessData(pd.read_csv("./train.csv"), pd.read_csv("./test.csv"))
-    trainNaiveBayes(trainData)
-    testNaiveBayes(testData)
+    trainOriginal = pd.read_csv("./train.csv")
+    testOriginal = pd.read_csv("./test.csv")
+    trainData, testData = preprocessData(trainOriginal, testOriginal)
+    gnb = trainNaiveBayes(trainData)
+    testNaiveBayes(gnb, testData, testOriginal)
     return
