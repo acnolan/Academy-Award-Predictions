@@ -8,10 +8,6 @@ A priori assumption: Past conditions still hold true for the Academy
 
 ## TODO
 - Fix overfitting on Random Forest?
-- Logistic Regression the data
-- SVM the data
-- KNN the data
-- Flag to show or not show visualizations
 
 
 ## Running the code
@@ -55,3 +51,5 @@ This code is very basic and can be optimized in the future. Once we see how it d
 2. [A Quick Guide To Sentiment Analysis | Sentiment Analysis In Python Using Textblob | Edureka](https://www.youtube.com/watch?v=O_B7XLfx0ic)
 3. [Scrape Twitter with 5 Lines of Code](https://www.youtube.com/watch?v=PUMMCLrVn8A)
 4. [Introduction to Data Preprocessing](https://towardsdatascience.com/introduction-to-data-preprocessing-in-machine-learning-a9fa83a5dc9d)
+5. [Naive Bayes Classifier - Multinomial Bernoulli Gaussian Using Sklearn in Python - Tutorial 32](https://www.youtube.com/watch?v=ok2s1vV9XW0&t=614s&ab_channel=codebasics)
+6. [Machine Learning Tutorial Python - 11 Random Forest](https://www.youtube.com/watch?v=99MN-rl8jGY&t=601s&ab_channel=TEW22)

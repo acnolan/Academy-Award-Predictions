@@ -1,0 +1,121 @@
+,category,film,predictions,probability_loses,probability_wins
+0,actor in a leading role,Elvis,False,0.85,0.15
+1,actor in a leading role,The Banshees of Inisherin,False,0.8,0.2
+2,actor in a leading role,The Whale,False,0.85,0.15
+3,actor in a leading role,Aftersun,False,0.85,0.15
+4,actor in a leading role,Living,False,0.85,0.15
+5,actor in a supporting role,The Banshees of Inisherin,False,0.8,0.2
+6,actor in a supporting role,Causeway,False,0.85,0.15
+7,actor in a supporting role,The Fabelmans,False,0.85,0.15
+8,actor in a supporting role,The Banshees of Inisherin,False,0.8,0.2
+9,actor in a supporting role,Everything Everywhere All at Once,False,0.8,0.2
+10,actress in a leading role,Tár,False,0.85,0.15
+11,actress in a leading role,Blonde,False,0.85,0.15
+12,actress in a leading role,To Leslie,False,0.85,0.15
+13,actress in a leading role,The Fabelmans,False,0.85,0.15
+14,actress in a leading role,Everything Everywhere All at Once,False,0.8,0.2
+15,actress in a supporting role,Black Panther: Wakanda Forever,False,0.85,0.15
+16,actress in a supporting role,The Whale,False,0.85,0.15
+17,actress in a supporting role,The Banshees of Inisherin,False,0.8,0.2
+18,actress in a supporting role,Everything Everywhere All at Once,False,0.8,0.2
+19,actress in a supporting role,Everything Everywhere All at Once,False,0.8,0.2
+20,animated feature film,Guillermo del Toro's Pinocchio,False,0.85,0.15
+21,animated feature film,Marcel the Shell with Shoes On,False,0.85,0.15
+22,animated feature film,Puss in Boots: The Last Wish,False,0.85,0.15
+23,animated feature film,The Sea Beast,False,0.85,0.15
+24,animated feature film,Turning Red,False,0.85,0.15
+25,cinematography,All Quiet on the Western Front,False,0.8,0.2
+26,cinematography,"Bardo, False Chronicle of a Handful of Truths",False,0.85,0.15
+27,cinematography,Elvis,False,0.85,0.15
+28,cinematography,Empire of Light,False,0.85,0.15
+29,cinematography,Tár,False,0.85,0.15
+30,costume design,Babylon,False,0.85,0.15
+31,costume design,Black Panther: Wakanda Forever,False,0.85,0.15
+32,costume design,Elvis,False,0.85,0.15
+33,costume design,Everything Everywhere All at Once,False,0.8,0.2
+34,costume design,Mrs. Harris Goes to Paris,False,0.85,0.15
+35,directing,The Banshees of Inisherin,False,0.8,0.2
+36,directing,Everything Everywhere All at Once,False,0.8,0.2
+37,directing,The Fabelmans,False,0.85,0.15
+38,directing,Tár,False,0.85,0.15
+39,directing,Triangle of Sadness,False,0.85,0.15
+40,documentary feature film,All That Breathes,False,0.85,0.15
+41,documentary feature film,All the Beauty and the Bloodshed,False,0.85,0.15
+42,documentary feature film,Fire of Love,False,0.85,0.15
+43,documentary feature film,A House Made of Splinters,False,0.85,0.15
+44,documentary feature film,Navalny,False,0.85,0.15
+45,documentary short film,The Elephant Whisperers,False,0.85,0.15
+46,documentary short film,Haulout,False,0.85,0.15
+47,documentary short film,How Do You Measure a Year?,False,0.85,0.15
+48,documentary short film,The Martha Mitchell Effect,False,0.85,0.15
+49,documentary short film,Stranger at the Gate,False,0.85,0.15
+50,film editing,The Banshees of Inisherin,False,0.8,0.2
+51,film editing,Elvis,False,0.85,0.15
+52,film editing,Everything Everywhere All at Once,False,0.8,0.2
+53,film editing,Tár,False,0.85,0.15
+54,film editing,Top Gun: Maverick,False,0.85,0.15
+55,international feature film,All Quiet on the Western Front,False,0.8,0.2
+56,international feature film,"Argentina, 1985",False,0.85,0.15
+57,international feature film,Close,False,0.85,0.15
+58,international feature film,EO,False,0.85,0.15
+59,international feature film,The Quiet Girl,False,0.85,0.15
+60,makeup and hairstyling,All Quiet on the Western Front,False,0.8,0.2
+61,makeup and hairstyling,The Batman,False,0.85,0.15
+62,makeup and hairstyling,Black Panther: Wakanda Forever,False,0.85,0.15
+63,makeup and hairstyling,Elvis,False,0.85,0.15
+64,makeup and hairstyling,The Whale,False,0.85,0.15
+65,music (original score),All Quiet on the Western Front,False,0.8,0.2
+66,music (original score),Babylon,False,0.85,0.15
+67,music (original score),The Banshees of Inisherin,False,0.8,0.2
+68,music (original score),Everything Everywhere All at Once,False,0.8,0.2
+69,music (original score),The Fabelmans,False,0.85,0.15
+70,music (original song),Tell It like a Woman,False,0.85,0.15
+71,music (original song),Top Gun: Maverick,False,0.85,0.15
+72,music (original song),Black Panther: Wakanda Forever,False,0.85,0.15
+73,music (original song),RRR,False,0.85,0.15
+74,music (original song),Everything Everywhere All at Once,False,0.8,0.2
+75,best picture,All Quiet on the Western Front,False,0.8,0.2
+76,best picture,Avatar: The Way of Water,False,0.85,0.15
+77,best picture,The Banshees of Inisherin,False,0.8,0.2
+78,best picture,Elvis,False,0.85,0.15
+79,best picture,Everything Everywhere All at Once,False,0.8,0.2
+80,best picture,The Fabelmans,False,0.85,0.15
+81,best picture,Tár,False,0.85,0.15
+82,best picture,Top Gun: Maverick,False,0.85,0.15
+83,best picture,Triangle of Sadness,False,0.85,0.15
+84,best picture,Women Talking,False,0.85,0.15
+85,production design,All Quiet on the Western Front,False,0.8,0.2
+86,production design,Avatar: The Way of Water,False,0.85,0.15
+87,production design,Babylon,False,0.85,0.15
+88,production design,Elvis,False,0.85,0.15
+89,production design,The Fabelmans,False,0.85,0.15
+90,short film (animated),"The Boy, the Mole, the Fox and the Horse",False,0.85,0.15
+91,short film (animated),The Flying Sailor,False,0.85,0.15
+92,short film (animated),Ice Merchants,False,0.85,0.15
+93,short film (animated),My Year of Dicks,False,0.85,0.15
+94,short film (animated),An Ostrich Told Me the World Is Fake and I Think I Believe It,False,0.85,0.15
+95,short film (live action),An Irish Goodbye,False,0.85,0.15
+96,short film (live action),Ivalu,False,0.85,0.15
+97,short film (live action),Le Pupille,False,0.85,0.15
+98,short film (live action),Night Ride,False,0.85,0.15
+99,short film (live action),The Red Suitcase,False,0.85,0.15
+100,sound,All Quiet on the Western Front,False,0.8,0.2
+101,sound,Avatar: The Way of Water,False,0.85,0.15
+102,sound,The Batman,False,0.85,0.15
+103,sound,Elvis,False,0.85,0.15
+104,sound,Top Gun: Maverick,False,0.85,0.15
+105,visual effects,All Quiet on the Western Front,False,0.8,0.2
+106,visual effects,Avatar: The Way of Water,False,0.85,0.15
+107,visual effects,The Batman,False,0.85,0.15
+108,visual effects,Black Panther: Wakanda Forever,False,0.85,0.15
+109,visual effects,Top Gun: Maverick,False,0.85,0.15
+110,writing (adapted screenplay),All Quiet on the Western Front,False,0.8,0.2
+111,writing (adapted screenplay),Glass Onion: A Knives Out Mystery,False,0.85,0.15
+112,writing (adapted screenplay),Living,False,0.85,0.15
+113,writing (adapted screenplay),Top Gun: Maverick,False,0.85,0.15
+114,writing (adapted screenplay),Women Talking,False,0.85,0.15
+115,writing (original screenplay),The Banshees of Inisherin,False,0.8,0.2
+116,writing (original screenplay),Everything Everywhere All at Once,False,0.8,0.2
+117,writing (original screenplay),The Fabelmans,False,0.85,0.15
+118,writing (original screenplay),Tár,False,0.85,0.15
+119,writing (original screenplay),Triangle of Sadness,False,0.85,0.15

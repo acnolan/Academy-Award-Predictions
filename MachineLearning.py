@@ -2,8 +2,11 @@ import pandas as pd
 from numpy import nan
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
-from NaiveBayes import trainNaiveBayes, testNaiveBayes
-from RandomForest import trainRandomForest, testRandomForest
+from NaiveBayes import trainNaiveBayes
+from RandomForest import trainRandomForest
+from LogisticRegression import trainLogisticRegression
+from SupportVectorMachine import trainSVM
+from KNN import trainKNN
 from VisualizeData import plotCorrelationHeatmap
 
 # Run some basic preprocessing to remove null values, standardize numbers, and convert nominal variables to one hot variables
@@ -77,6 +80,28 @@ def printWinner(winnerDict):
         print(category, " winner is ", value['winner'], "!")
     return
 
+# Use a model to predict the Academy Award winners on unknown data
+# To avoid multiples in a same category winning, we'll also record their probabilities
+# We can call the winner the higher probability
+def testModel(model, df, original, fileName):
+    predictionDictionary = {}
+    predictionDictionary['category'] = original['category']
+    predictionDictionary['film'] = original['film']
+
+    df = df.drop(['winner'], axis=1)
+
+    predictionDictionary['predictions'] = model.predict(df.values)
+    predictionProbabity = model.predict_proba(df.values)
+
+    predictionDictionary['probability_loses'] = [p[0] for p in predictionProbabity]
+    predictionDictionary['probability_wins'] = [p[1] for p in predictionProbabity]
+    
+    predicted_df = pd.DataFrame(predictionDictionary)
+
+    predicted_df.to_csv(fileName + '_predictions.csv')
+
+    return predicted_df
+
 # Train and run the machine learning algorithms
 def executeMachineLearning():
     # Load original raw data
@@ -86,13 +111,25 @@ def executeMachineLearning():
     # Preprocess the data
     trainData, testData = preprocessData(trainOriginal, testOriginal)
     
-    # Try out naive bayes
+    '''# Try out naive bayes
     gnb, gnb_accuracy = trainNaiveBayes(trainData)
-    predicted_gnb = testNaiveBayes(gnb, testData, testOriginal)
+    predicted_gnb = testModel(gnb, testData, testOriginal, 'NaiveBayes')
 
     # Try out random forest
     rf, rf_accuracy = trainRandomForest(trainData)
-    predicted_rf = testRandomForest(rf, testData, testOriginal)
+    predicted_rf = testModel(rf, testData, testOriginal, 'RandomForest')
+
+    # Try out Logistic Regression
+    lr, lr_accuary = trainLogisticRegression(trainData)
+    predicted_lr = testModel(lr, testData, testOriginal, 'LogisticRegression)
+
+    # Try out Support Vector Machines
+    svm, svm_accuracy = trainSVM(trainData)
+    predicted_svm = testModel(svm, testData, testOriginal, 'SVM')'''
+
+    # Try out K-Nearest Neighbors
+    knn, knn_accuracy = trainKNN(trainData)
+    predicted_knn = testModel(knn, testData, testOriginal, 'KNN')
 
     # Output the winners
     #printWinner(determineWinnerFromPredictions(predicted_gnb))

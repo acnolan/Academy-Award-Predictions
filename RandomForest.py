@@ -16,7 +16,7 @@ RandomForestParamGrid = {
 
 # Train a Random Forest model
 def trainRandomForest(df):
-    print('Starting Random Forest')
+    print('Trying Random Forest...')
 
     X = df.drop(['winner'],axis=1).values
 
@@ -32,13 +32,13 @@ def trainRandomForest(df):
     
     accuracy = accuracy_score(y_test, y_pred)
 
-    print("Training Accuracy for Random Forest {:.4}%".format(accuracy))
+    print("Training Accuracy for Random Forest {:.4}%".format(accuracy * 100))
     print("Number of mislabeled training awards out of a total %d entries: %d" % (X_test.shape[0], (y_test != y_pred).sum()))
 
     plotConfusionMatrix(y_test, y_pred)
     return rf, accuracy
 
-# TODO: Test various hyperparameters to see what works best
+# Test various hyperparameters to see what works best
 def tuneHyperparameters(X, y):
     randomSearch = RandomizedSearchCV(RandomForestClassifier(), RandomForestParamGrid)
     randomSearch.fit(X, y)
@@ -46,25 +46,3 @@ def tuneHyperparameters(X, y):
     print("Best hyperparameters for Random Forest: ", randomSearch.best_estimator_)
 
     return randomSearch.best_estimator_
-
-# Run the Random Forest model on the unknown data
-# To avoid multiples in a same category winning, we'll also record their probabilities
-# We can call the winner the higher probability
-def testRandomForest(rf, df, original):
-    predictionDictionary = {}
-    predictionDictionary['category'] = original['category']
-    predictionDictionary['film'] = original['film']
-
-    df = df.drop(['winner'], axis=1)
-
-    predictionDictionary['predictions'] = rf.predict(df.values)
-    predictionProbabity = rf.predict_proba(df.values)
-
-    predictionDictionary['probability_loses'] = [p[0] for p in predictionProbabity]
-    predictionDictionary['probability_wins'] = [p[1] for p in predictionProbabity]
-    
-    predicted_df = pd.DataFrame(predictionDictionary)
-
-    predicted_df.to_csv('RandomForest_predictions.csv')
-
-    return predicted_df
