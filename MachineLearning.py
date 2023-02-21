@@ -80,6 +80,18 @@ def printWinner(winnerDict):
         print(category, " winner is ", value['winner'], "!")
     return
 
+# Determine which model worked best
+def determineBestModel(modelDict):
+    bestModel = ''
+    for key, value in modelDict.items():
+        if bestModel != '':
+            if value['accuracy'] > modelDict[bestModel]['accuracy']:
+                bestModel = key
+        else: 
+            bestModel = key
+
+    return bestModel
+
 # Use a model to predict the Academy Award winners on unknown data
 # To avoid multiples in a same category winning, we'll also record their probabilities
 # We can call the winner the higher probability
@@ -111,7 +123,7 @@ def executeMachineLearning():
     # Preprocess the data
     trainData, testData = preprocessData(trainOriginal, testOriginal)
     
-    '''# Try out naive bayes
+    # Try out naive bayes
     gnb, gnb_accuracy = trainNaiveBayes(trainData)
     predicted_gnb = testModel(gnb, testData, testOriginal, 'NaiveBayes')
 
@@ -120,17 +132,44 @@ def executeMachineLearning():
     predicted_rf = testModel(rf, testData, testOriginal, 'RandomForest')
 
     # Try out Logistic Regression
-    lr, lr_accuary = trainLogisticRegression(trainData)
-    predicted_lr = testModel(lr, testData, testOriginal, 'LogisticRegression)
+    lr, lr_accuracy = trainLogisticRegression(trainData)
+    predicted_lr = testModel(lr, testData, testOriginal, 'LogisticRegression')
 
     # Try out Support Vector Machines
     svm, svm_accuracy = trainSVM(trainData)
-    predicted_svm = testModel(svm, testData, testOriginal, 'SVM')'''
+    predicted_svm = testModel(svm, testData, testOriginal, 'SVM')
 
     # Try out K-Nearest Neighbors
     knn, knn_accuracy = trainKNN(trainData)
     predicted_knn = testModel(knn, testData, testOriginal, 'KNN')
 
+    # Determine which model worked best
+    resultsDict = {
+        'naive bayes': {
+            'accuracy': gnb_accuracy,
+            'results': predicted_gnb
+        },
+        'random forest': {
+            'accuracy': rf_accuracy,
+            'results': predicted_rf
+        },
+        'logistic regression': {
+            'accuracy': lr_accuracy,
+            'results': predicted_lr
+        },
+        'svm': {
+            'accuracy': svm_accuracy,
+            'results': predicted_svm
+        },
+        'knn': {
+            'accuracy': knn_accuracy,
+            'results': predicted_knn
+        }
+    }
+
+    bestModelKey = determineBestModel(resultsDict)
+
     # Output the winners
-    #printWinner(determineWinnerFromPredictions(predicted_gnb))
+    print('\nThe highest accuracy belonged to the ', bestModelKey, ' model.\nIt predicted...')
+    printWinner(determineWinnerFromPredictions(resultsDict[bestModelKey]['results']))
     return

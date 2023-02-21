@@ -6,10 +6,6 @@ A basic data collection and prediction pipeline for the Academy Awards.
 
 A priori assumption: Past conditions still hold true for the Academy
 
-## TODO
-- Fix overfitting on Random Forest?
-
-
 ## Running the code
 
 ### Only run machine learning
