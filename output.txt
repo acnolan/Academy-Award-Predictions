@@ -1,0 +1,45 @@
+Trying Naive Bayes...
+Training Accuracy for Naive Bayes 66.15%
+Number of mislabeled training awards out of a total 1855 entries: 628
+Trying Random Forest...
+Best hyperparameters for Random Forest:  RandomForestClassifier(max_depth=6, max_features=None, min_samples_split=4,
+                       n_estimators=25)
+Training Accuracy for Random Forest 80.27%
+Number of mislabeled training awards out of a total 1855 entries: 366
+Trying Logistic Regression...
+Best hyperparameters for Logistic Regression:  LogisticRegression(solver='sag')
+Training Accuracy for Logistic Regression 79.68%
+Number of mislabeled training awards out of a total 1855 entries: 377
+Trying Support Vector Machine...
+Training Accuracy for Support Vector Machine 79.68%
+Number of mislabeled training awards out of a total 1855 entries: 377
+Trying KNN...
+Best hyperparameters for KNN:  KNeighborsClassifier(n_neighbors=20, p=1)
+Training Accuracy for KNN 79.68%
+Number of mislabeled training awards out of a total 1855 entries: 377
+
+The highest accuracy belonged to the  random forest  model.
+It predicted...
+actor in a leading role  winner is  The Banshees of Inisherin !
+actor in a supporting role  winner is  Everything Everywhere All at Once !
+actress in a leading role  winner is  Everything Everywhere All at Once !
+actress in a supporting role  winner is  Everything Everywhere All at Once !
+animated feature film  winner is  Puss in Boots: The Last Wish !
+cinematography  winner is  All Quiet on the Western Front !
+costume design  winner is  Everything Everywhere All at Once !
+directing  winner is  Everything Everywhere All at Once !
+documentary feature film  winner is  All the Beauty and the Bloodshed !
+documentary short film  winner is  Haulout !
+film editing  winner is  Everything Everywhere All at Once !
+international feature film  winner is  All Quiet on the Western Front !
+makeup and hairstyling  winner is  All Quiet on the Western Front !
+music (original score)  winner is  Everything Everywhere All at Once !
+music (original song)  winner is  Everything Everywhere All at Once !
+best picture  winner is  The Banshees of Inisherin !
+production design  winner is  All Quiet on the Western Front !
+short film (animated)  winner is  Ice Merchants !
+short film (live action)  winner is  Le Pupille !
+sound  winner is  All Quiet on the Western Front !
+visual effects  winner is  All Quiet on the Western Front !
+writing (adapted screenplay)  winner is  All Quiet on the Western Front !
+writing (original screenplay)  winner is  Everything Everywhere All at Once !

@@ -99,5 +99,5 @@ def rebuildTable():
     df['film_count'] = filmCount
     df['nominee_count'] = nomineeCount
 
-    df.loc[df['ceremony'] == 95].to_csv('train.csv')
-    df.loc[df['ceremony'] != 95].to_csv('test.csv')
+    df.loc[df['ceremony'] == 95].to_csv('test.csv')
+    df.loc[df['ceremony'] != 95].to_csv('train.csv')

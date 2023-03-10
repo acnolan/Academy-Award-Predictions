@@ -1,0 +1,121 @@
+,year_film,year_ceremony,ceremony,category,name,film,winner,rating,genre,sentiment,subjectivity,average_likes,average_retweets,film_count,nominee_count
+10639,2022,2023,95,Actor in a Leading Role,Austin Butler,Elvis,,3.49,music,0.4052976190476191,0.47964285714285715,39.3,5.3999999999999995,8,1
+10640,2022,2023,95,Actor in a Leading Role,Colin Farrell,The Banshees of Inisherin,,4.12,drama,0.11333333333333334,0.35250000000000004,8.3,0.9,9,1
+10641,2022,2023,95,Actor in a Leading Role,Brendan Fraser,The Whale,,3.74,drama,0.38895858134920636,0.44509523809523804,7.499999999999998,0.7999999999999999,3,1
+10642,2022,2023,95,Actor in a Leading Role,Paul Mescal,Aftersun,,3.29,thriller,0.17250000000000001,0.14717948717948717,14.2,1.6,1,1
+10643,2022,2023,95,Actor in a Leading Role,Bill Nighy,Living,,3.60,drama,0.3360751262626263,0.6354772727272726,1.9000000000000001,0.2,2,1
+10644,2022,2023,95,Actor in a Supporting Role,Brendan Gleeson,The Banshees of Inisherin,,4.12,drama,0.11333333333333334,0.35250000000000004,8.3,0.9,9,1
+10645,2022,2023,95,Actor in a Supporting Role,Brian Tyree Henry,Causeway,,3.46,drama,0.27649350649350646,0.26857142857142857,9.099999999999998,1.2000000000000002,1,1
+10646,2022,2023,95,Actor in a Supporting Role,Judd Hirsch,The Fabelmans,,4.08,drama,0.28444444444444444,0.30111111111111116,12.4,3.1,7,2
+10647,2022,2023,95,Actor in a Supporting Role,Barry Keoghan,The Banshees of Inisherin,,4.12,drama,0.11333333333333334,0.35250000000000004,8.3,0.9,9,1
+10648,2022,2023,95,Actor in a Supporting Role,Ke Huy Quan,Everything Everywhere All at Once,,4.44,adventure,0.30675006200396826,0.2952579365079365,104.1,19.0,11,1
+10649,2022,2023,95,Actress in a Leading Role,Cate Blanchett,Tár,,4.02,music,0.3035,0.246,0.5,0.0,6,8
+10650,2022,2023,95,Actress in a Leading Role,Ana de Armas,Blonde,,2.09,drama,0.1935416666666667,0.24806018518518522,0.9999999999999999,0.2,1,1
+10651,2022,2023,95,Actress in a Leading Role,Andrea Riseborough,To Leslie,,3.42,drama,0.43319444444444444,0.5270833333333333,0.9,0.4,1,1
+10652,2022,2023,95,Actress in a Leading Role,Michelle Williams,The Fabelmans,,4.08,drama,0.28444444444444444,0.30111111111111116,12.4,3.1,7,5
+10653,2022,2023,95,Actress in a Leading Role,Michelle Yeoh,Everything Everywhere All at Once,,4.44,adventure,0.30675006200396826,0.2952579365079365,104.1,19.0,11,1
+10654,2022,2023,95,Actress in a Supporting Role,Angela Bassett,Black Panther: Wakanda Forever,,3.64,adventure,0.13699242424242428,0.586030303030303,148.8,17.1,5,2
+10655,2022,2023,95,Actress in a Supporting Role,Hong Chau,The Whale,,3.74,drama,0.38895858134920636,0.44509523809523804,7.499999999999998,0.7999999999999999,3,1
+10656,2022,2023,95,Actress in a Supporting Role,Kerry Condon,The Banshees of Inisherin,,4.12,drama,0.11333333333333334,0.35250000000000004,8.3,0.9,9,1
+10657,2022,2023,95,Actress in a Supporting Role,Jamie Lee Curtis,Everything Everywhere All at Once,,4.44,adventure,0.30675006200396826,0.2952579365079365,104.1,19.0,11,1
+10658,2022,2023,95,Actress in a Supporting Role,Stephanie Hsu,Everything Everywhere All at Once,,4.44,adventure,0.30675006200396826,0.2952579365079365,104.1,19.0,11,1
+10659,2022,2023,95,Animated Feature Film,"Guillermo del Toro, Mark Gustafson, Gary Ungar and Alex Bulkley",Guillermo del Toro's Pinocchio,,4.07,fantasy,0.4989299242424242,0.48573863636363646,518.5,63.1,1,1
+10660,2022,2023,95,Animated Feature Film,"Dean Fleischer Camp, Elisabeth Holm, Andrew Goldman, Caroline Kaplan and Paul Mezey",Marcel the Shell with Shoes On,,3.86,animation,0.2549702380952381,0.27623015873015877,3.0000000000000004,0.7,1,1
+10661,2022,2023,95,Animated Feature Film,Joel Crawford and Mark Swift,Puss in Boots: The Last Wish,,4.27,comedy,0.14833333333333337,0.22019841269841267,7.5,0.2,1,1
+10662,2022,2023,95,Animated Feature Film,Chris Williams and Jed Schlanger,The Sea Beast,,3.50,fantasy,0.24156944444444448,0.35097222222222224,5.299999999999999,0.7999999999999999,1,1
+10663,2022,2023,95,Animated Feature Film,Domee Shi and Lindsey Collins,Turning Red,,3.72,fantasy,0.1675,0.26241666666666663,1.2000000000000002,0.4,1,1
+10664,2022,2023,95,Cinematography,James Friend,All Quiet on the Western Front,,4.03,drama,0.2601636904761905,0.28774801587301585,57.8,6.300000000000001,13,1
+10665,2022,2023,95,Cinematography,Darius Khondji,"Bardo, False Chronicle of a Handful of Truths",,3.59,comedy,-0.006145833333333371,0.6715972222222222,73.2,14.4,1,2
+10666,2022,2023,95,Cinematography,Mandy Walker,Elvis,,3.49,music,0.4052976190476191,0.47964285714285715,39.3,5.3999999999999995,8,1
+10667,2022,2023,95,Cinematography,Roger Deakins,Empire of Light,,3.07,romance,0.4562142857142857,0.6505238095238096,0.30000000000000004,0.0,1,13
+10668,2022,2023,95,Cinematography,Florian Hoffmeister,Tár,,4.02,music,0.3035,0.246,0.5,0.0,6,1
+10669,2022,2023,95,Costume Design,Mary Zophres,Babylon,,3.89,comedy,0.01541666666666668,0.255,1.0,0.30000000000000004,3,4
+10670,2022,2023,95,Costume Design,Ruth Carter,Black Panther: Wakanda Forever,,3.64,adventure,0.13699242424242428,0.586030303030303,148.8,17.1,5,3
+10671,2022,2023,95,Costume Design,Catherine Martin,Elvis,,3.49,music,0.4052976190476191,0.47964285714285715,39.3,5.3999999999999995,8,3
+10672,2022,2023,95,Costume Design,Shirley Kurata,Everything Everywhere All at Once,,4.44,adventure,0.30675006200396826,0.2952579365079365,104.1,19.0,11,1
+10673,2022,2023,95,Costume Design,Jenny Beavan,Mrs. Harris Goes to Paris,,3.52,comedy,0.3015,0.31747619047619047,27.099999999999998,3.7,1,6
+10674,2022,2023,95,Directing,Martin McDonagh,The Banshees of Inisherin,,4.12,drama,0.11333333333333334,0.35250000000000004,8.3,0.9,9,2
+10675,2022,2023,95,Directing,Daniel Kwan and Daniel Scheinert,Everything Everywhere All at Once,,4.44,adventure,0.30675006200396826,0.2952579365079365,104.1,19.0,11,1
+10676,2022,2023,95,Directing,Steven Spielberg,The Fabelmans,,4.08,drama,0.28444444444444444,0.30111111111111116,12.4,3.1,7,10
+10677,2022,2023,95,Directing,Todd Field,Tár,,4.02,music,0.3035,0.246,0.5,0.0,6,1
+10678,2022,2023,95,Directing,Ruben Östlund,Triangle of Sadness,,3.81,comedy,0.20006944444444444,0.2045833333333333,2.6999999999999997,0.30000000000000004,3,1
+10679,2022,2023,95,Documentary Feature Film,"Shaunak Sen, Aman Mann and Teddy Leifer",All That Breathes,,3.66,documentary,0.355422077922078,0.32226190476190475,6.300000000000001,2.2,1,1
+10680,2022,2023,95,Documentary Feature Film,"Laura Poitras, Howard Gertler, John Lyons, Nan Goldin and Yoni Golijov",All the Beauty and the Bloodshed,,4.23,documentary,0.19,0.15375,2.7000000000000006,0.1,1,1
+10681,2022,2023,95,Documentary Feature Film,"Sara Dosa, Shane Boris and Ina Fichman",Fire of Love,,4.02,documentary,0.48961309523809526,0.5721924603174603,41.800000000000004,4.5,1,1
+10682,2022,2023,95,Documentary Feature Film,Simon Lereng Wilmont and Monica Hellström,A House Made of Splinters,,3.64,documentary,0.20494047619047617,0.3786904761904762,6.6,1.1,1,1
+10683,2022,2023,95,Documentary Feature Film,"Daniel Roher, Odessa Rae, Diane Becker, Melanie Miller and Shane Boris",Navalny,,3.81,documentary,0.1555837542087542,0.27817887205387204,7.3999999999999995,2.0,1,1
+10684,2022,2023,95,Documentary Short Film,Kartiki Gonsalves and Guneet Monga,The Elephant Whisperers,,3.74,documentary,0.14157738095238095,0.30714285714285716,53.1,4.5,1,1
+10685,2022,2023,95,Documentary Short Film,Evgenia Arbugaeva and Maxim Arbugaev,Haulout,,3.63,documentary,0.1576948051948052,0.35591720779220776,2.7,0.5,1,1
+10686,2022,2023,95,Documentary Short Film,Jay Rosenblatt,How Do You Measure a Year?,,3.23,documentary,0.06166666666666666,0.1583333333333333,1.8,0.2,1,2
+10687,2022,2023,95,Documentary Short Film,Anne Alvergue and Beth Levison,The Martha Mitchell Effect,,3.19,documentary,0.19484126984126982,0.2785396825396826,3.9000000000000004,0.5,1,1
+10688,2022,2023,95,Documentary Short Film,Joshua Seftel and Conall Jones,Stranger at the Gate,,2.61,documentary,0.1743322510822511,0.31038528138528143,11.799999999999999,1.0,1,1
+10689,2022,2023,95,Film Editing,Mikkel E.G. Nielsen,The Banshees of Inisherin,,4.12,drama,0.11333333333333334,0.35250000000000004,8.3,0.9,9,1
+10690,2022,2023,95,Film Editing,Matt Villa and Jonathan Redmond,Elvis,,3.49,music,0.4052976190476191,0.47964285714285715,39.3,5.3999999999999995,8,1
+10691,2022,2023,95,Film Editing,Paul Rogers,Everything Everywhere All at Once,,4.44,adventure,0.30675006200396826,0.2952579365079365,104.1,19.0,11,1
+10692,2022,2023,95,Film Editing,Monika Willi,Tár,,4.02,music,0.3035,0.246,0.5,0.0,6,1
+10693,2022,2023,95,Film Editing,Eddie Hamilton,Top Gun: Maverick,,4.09,drama,0.4205208333333333,0.44055555555555553,19.300000000000004,4.4,6,1
+10694,2022,2023,95,International Feature Film,Germany,All Quiet on the Western Front,,4.03,drama,0.2601636904761905,0.28774801587301585,57.8,6.300000000000001,13,12
+10695,2022,2023,95,International Feature Film,Argentina,"Argentina, 1985",,4.16,drama,0.230737012987013,0.22055952380952382,2.4000000000000004,0.2,1,8
+10696,2022,2023,95,International Feature Film,Belgium,Close,,4.04,drama,0.4433333333333333,0.6245555555555556,1.5,0.2,1,8
+10697,2022,2023,95,International Feature Film,Poland,EO,,3.54,drama,0.2490340909090909,0.31011363636363637,4.4,0.5,1,13
+10698,2022,2023,95,International Feature Film,Ireland,The Quiet Girl,,4.02,drama,0.08129166666666666,0.4333888888888889,18.199999999999996,4.3,1,1
+10699,2022,2023,95,Makeup and Hairstyling,Heike Merker and Linda Eisenhamerová,All Quiet on the Western Front,,4.03,drama,0.2601636904761905,0.28774801587301585,57.8,6.300000000000001,13,1
+10700,2022,2023,95,Makeup and Hairstyling,"Naomi Donne, Mike Marino and Mike Fontaine",The Batman,,4.05,mystery,0.3752777777777778,0.5587500000000001,0.7,0.1,3,1
+10701,2022,2023,95,Makeup and Hairstyling,Camille Friend and Joel Harlow,Black Panther: Wakanda Forever,,3.64,adventure,0.13699242424242428,0.586030303030303,148.8,17.1,5,1
+10702,2022,2023,95,Makeup and Hairstyling,"Mark Coulier, Jason Baird and Aldo Signoretti",Elvis,,3.49,music,0.4052976190476191,0.47964285714285715,39.3,5.3999999999999995,8,1
+10703,2022,2023,95,Makeup and Hairstyling,"Adrien Morot, Judy Chin and Anne Marie Bradley",The Whale,,3.74,drama,0.38895858134920636,0.44509523809523804,7.499999999999998,0.7999999999999999,3,1
+10704,2022,2023,95,Music (Original Score),Volker Bertelmann,All Quiet on the Western Front,,4.03,drama,0.2601636904761905,0.28774801587301585,57.8,6.300000000000001,13,1
+10705,2022,2023,95,Music (Original Score),Justin Hurwitz,Babylon,,3.89,comedy,0.01541666666666668,0.255,1.0,0.30000000000000004,3,2
+10706,2022,2023,95,Music (Original Score),Carter Burwell,The Banshees of Inisherin,,4.12,drama,0.11333333333333334,0.35250000000000004,8.3,0.9,9,3
+10707,2022,2023,95,Music (Original Score),Son Lux,Everything Everywhere All at Once,,4.44,adventure,0.30675006200396826,0.2952579365079365,104.1,19.0,11,1
+10708,2022,2023,95,Music (Original Score),John Williams,The Fabelmans,,4.08,drama,0.28444444444444444,0.30111111111111116,12.4,3.1,7,45
+10709,2022,2023,95,Music (Original Song),Music and Lyric by Diane Warren,Tell It like a Woman,,2.01,action,0.3622222222222222,0.4981111111111111,5.2,1.4,1,10
+10710,2022,2023,95,Music (Original Song),Music and Lyric by Lady Gaga and BloodPop,Top Gun: Maverick,,4.09,drama,0.4205208333333333,0.44055555555555553,19.300000000000004,4.4,6,1
+10711,2022,2023,95,Music (Original Song),"Music by Tems, Rihanna, Ryan Coogler and Ludwig Goransson Lyric by Tems and Ryan Coogler",Black Panther: Wakanda Forever,,3.64,adventure,0.13699242424242428,0.586030303030303,148.8,17.1,5,1
+10712,2022,2023,95,Music (Original Song),Music by M.M. Keeravaani Lyric by Chandrabose,RRR,,4.17,action,-0.01788888888888889,0.26688888888888884,4.5,2.1,1,1
+10713,2022,2023,95,Music (Original Song),"Music by Ryan Lott, David Byrne and Mitski Lyric by Ryan Lott and David Byrne",Everything Everywhere All at Once,,4.44,adventure,0.30675006200396826,0.2952579365079365,104.1,19.0,11,1
+10714,2022,2023,95,Best Picture,"Malte Grunert, Producer",All Quiet on the Western Front,,4.03,drama,0.2601636904761905,0.28774801587301585,57.8,6.300000000000001,13,1
+10715,2022,2023,95,Best Picture,"James Cameron and Jon Landau, Producers",Avatar: The Way of Water,,3.78,science-fiction,0.34302083333333333,0.31409722222222225,4.3999999999999995,0.1,4,3
+10716,2022,2023,95,Best Picture,"Graham Broadbent, Pete Czernin and Martin McDonagh, Producers",The Banshees of Inisherin,,4.12,drama,0.11333333333333334,0.35250000000000004,8.3,0.9,9,2
+10717,2022,2023,95,Best Picture,"Baz Luhrmann, Catherine Martin, Gail Berman, Patrick McCormick and Schuyler Weiss, Producers",Elvis,,3.49,music,0.4052976190476191,0.47964285714285715,39.3,5.3999999999999995,8,1
+10718,2022,2023,95,Best Picture,"Daniel Kwan, Daniel Scheinert and Jonathan Wang, Producers",Everything Everywhere All at Once,,4.44,adventure,0.30675006200396826,0.2952579365079365,104.1,19.0,11,1
+10719,2022,2023,95,Best Picture,"Kristie Macosko Krieger, Steven Spielberg and Tony Kushner, Producers",The Fabelmans,,4.08,drama,0.28444444444444444,0.30111111111111116,12.4,3.1,7,1
+10720,2022,2023,95,Best Picture,"Todd Field, Alexandra Milchan and Scott Lambert, Producers",Tár,,4.02,music,0.3035,0.246,0.5,0.0,6,1
+10721,2022,2023,95,Best Picture,"Tom Cruise, Christopher McQuarrie, David Ellison and Jerry Bruckheimer, Producers",Top Gun: Maverick,,4.09,drama,0.4205208333333333,0.44055555555555553,19.300000000000004,4.4,6,1
+10722,2022,2023,95,Best Picture,"Erik Hemmendorff and Philippe Bober, Producers",Triangle of Sadness,,3.81,comedy,0.20006944444444444,0.2045833333333333,2.6999999999999997,0.30000000000000004,3,1
+10723,2022,2023,95,Best Picture,"Dede Gardner, Jeremy Kleiner and Frances McDormand, Producers",Women Talking,,3.88,drama,0.1634722222222222,0.26152777777777775,50.1,7.1,2,1
+10724,2022,2023,95,Production Design,Production Design: Christian M. Goldbeck Set Decoration: Ernestine Hipper,All Quiet on the Western Front,,4.03,drama,0.2601636904761905,0.28774801587301585,57.8,6.300000000000001,13,1
+10725,2022,2023,95,Production Design,Production Design: Dylan Cole and Ben Procter Set Decoration: Vanessa Cole,Avatar: The Way of Water,,3.78,science-fiction,0.34302083333333333,0.31409722222222225,4.3999999999999995,0.1,4,1
+10726,2022,2023,95,Production Design,Production Design: Florencia Martin Set Decoration: Anthony Carlino,Babylon,,3.89,comedy,0.01541666666666668,0.255,1.0,0.30000000000000004,3,1
+10727,2022,2023,95,Production Design,Production Design: Catherine Martin and Karen Murphy Set Decoration: Bev Dunn,Elvis,,3.49,music,0.4052976190476191,0.47964285714285715,39.3,5.3999999999999995,8,1
+10728,2022,2023,95,Production Design,Production Design: Rick Carter Set Decoration: Karen O'Hara,The Fabelmans,,4.08,drama,0.28444444444444444,0.30111111111111116,12.4,3.1,7,1
+10729,2022,2023,95,Short Film (Animated),Charlie Mackesy and Matthew Freud,"The Boy, the Mole, the Fox and the Horse",,3.84,animation,0.15829545454545452,0.49594516594516597,11.0,2.2,1,1
+10730,2022,2023,95,Short Film (Animated),Amanda Forbis and Wendy Tilby,The Flying Sailor,,2.91,animation,0.11299999999999999,0.5183333333333334,2.6,0.5,1,2
+10731,2022,2023,95,Short Film (Animated),João Gonzalez and Bruno Caetano,Ice Merchants,,4.15,animation,0.2446458333333333,0.4516666666666666,5.0,1.6,1,1
+10732,2022,2023,95,Short Film (Animated),Sara Gunnarsdóttir and Pamela Ribon,My Year of Dicks,,3.58,comedy,0.30546608946608944,0.42140873015873015,2.0,0.0,1,1
+10733,2022,2023,95,Short Film (Animated),Lachlan Pendragon,An Ostrich Told Me the World Is Fake and I Think I Believe It,,3.81,animation,-0.028441558441558448,0.8395202020202019,2.0,0.30000000000000004,1,1
+10734,2022,2023,95,Short Film (Live Action),Tom Berkeley and Ross White,An Irish Goodbye,,3.55,drama,0.17933901515151512,0.27573611111111107,11.599999999999998,0.30000000000000004,1,1
+10735,2022,2023,95,Short Film (Live Action),Anders Walter and Rebecca Pruzan,Ivalu,,2.88,drama,0.15292424242424243,0.24433333333333332,0.8999999999999999,0.30000000000000004,1,1
+10736,2022,2023,95,Short Film (Live Action),Alice Rohrwacher and Alfonso Cuarón,Le Pupille,,3.66,family,0.10515656565656567,0.29327777777777775,1.1,0.1,1,1
+10737,2022,2023,95,Short Film (Live Action),Eirik Tveiten and Gaute Lid Larssen,Night Ride,,,drama,0.1015151515151515,0.10499999999999998,2.1,0.30000000000000004,1,1
+10738,2022,2023,95,Short Film (Live Action),Cyrus Neshvad,The Red Suitcase,,3.73,drama,0.07959415584415584,0.22945779220779222,6.3999999999999995,1.5,1,1
+10739,2022,2023,95,Sound,"Viktor Prášil, Frank Kruse, Markus Stemler, Lars Ginzel and Stefan Korte",All Quiet on the Western Front,,4.03,drama,0.2601636904761905,0.28774801587301585,57.8,6.300000000000001,13,1
+10740,2022,2023,95,Sound,"Julian Howarth, Gwendolyn Yates Whittle, Dick Bernstein, Christopher Boyes, Gary Summers and Michael Hedges",Avatar: The Way of Water,,3.78,science-fiction,0.34302083333333333,0.31409722222222225,4.3999999999999995,0.1,4,1
+10741,2022,2023,95,Sound,"Stuart Wilson, William Files, Douglas Murray and Andy Nelson",The Batman,,4.05,mystery,0.3752777777777778,0.5587500000000001,0.7,0.1,3,1
+10742,2022,2023,95,Sound,"David Lee, Wayne Pashley, Andy Nelson and Michael Keller",Elvis,,3.49,music,0.4052976190476191,0.47964285714285715,39.3,5.3999999999999995,8,1
+10743,2022,2023,95,Sound,"Mark Weingarten, James H. Mather, Al Nelson, Chris Burdon and Mark Taylor",Top Gun: Maverick,,4.09,drama,0.4205208333333333,0.44055555555555553,19.300000000000004,4.4,6,1
+10744,2022,2023,95,Visual Effects,"Frank Petzold, Viktor Müller, Markus Frank and Kamil Jafar",All Quiet on the Western Front,,4.03,drama,0.2601636904761905,0.28774801587301585,57.8,6.300000000000001,13,1
+10745,2022,2023,95,Visual Effects,"Joe Letteri, Richard Baneham, Eric Saindon and Daniel Barrett",Avatar: The Way of Water,,3.78,science-fiction,0.34302083333333333,0.31409722222222225,4.3999999999999995,0.1,4,1
+10746,2022,2023,95,Visual Effects,"Dan Lemmon, Russell Earl, Anders Langlands and Dominic Tuohy",The Batman,,4.05,mystery,0.3752777777777778,0.5587500000000001,0.7,0.1,3,1
+10747,2022,2023,95,Visual Effects,"Geoffrey Baumann, Craig Hammack, R. Christopher White and Dan Sudick",Black Panther: Wakanda Forever,,3.64,adventure,0.13699242424242428,0.586030303030303,148.8,17.1,5,1
+10748,2022,2023,95,Visual Effects,"Ryan Tudhope, Seth Hill, Bryan Litson and Scott R. Fisher",Top Gun: Maverick,,4.09,drama,0.4205208333333333,0.44055555555555553,19.300000000000004,4.4,6,1
+10749,2022,2023,95,Writing (Adapted Screenplay),"Screenplay - Edward Berger, Lesley Paterson & Ian Stokell",All Quiet on the Western Front,,4.03,drama,0.2601636904761905,0.28774801587301585,57.8,6.300000000000001,13,1
+10750,2022,2023,95,Writing (Adapted Screenplay),Written by Rian Johnson,Glass Onion: A Knives Out Mystery,,3.67,crime,0.3069444444444444,0.47924999999999995,46.400000000000006,6.0,1,2
+10751,2022,2023,95,Writing (Adapted Screenplay),Written by Kazuo Ishiguro,Living,,3.60,drama,0.3360751262626263,0.6354772727272726,1.9000000000000001,0.2,2,1
+10752,2022,2023,95,Writing (Adapted Screenplay),Screenplay by Ehren Kruger and Eric Warren Singer and Christopher McQuarrie Story by Peter Craig and Justin Marks,Top Gun: Maverick,,4.09,drama,0.4205208333333333,0.44055555555555553,19.300000000000004,4.4,6,1
+10753,2022,2023,95,Writing (Adapted Screenplay),Screenplay by Sarah Polley,Women Talking,,3.88,drama,0.1634722222222222,0.26152777777777775,50.1,7.1,2,1
+10754,2022,2023,95,Writing (Original Screenplay),Written by Martin McDonagh,The Banshees of Inisherin,,4.12,drama,0.11333333333333334,0.35250000000000004,8.3,0.9,9,3
+10755,2022,2023,95,Writing (Original Screenplay),Written by Daniel Kwan & Daniel Scheinert,Everything Everywhere All at Once,,4.44,adventure,0.30675006200396826,0.2952579365079365,104.1,19.0,11,1
+10756,2022,2023,95,Writing (Original Screenplay),Written by Steven Spielberg & Tony Kushner,The Fabelmans,,4.08,drama,0.28444444444444444,0.30111111111111116,12.4,3.1,7,1
+10757,2022,2023,95,Writing (Original Screenplay),Written by Todd Field,Tár,,4.02,music,0.3035,0.246,0.5,0.0,6,1
+10758,2022,2023,95,Writing (Original Screenplay),Written by Ruben Östlund,Triangle of Sadness,,3.81,comedy,0.20006944444444444,0.2045833333333333,2.6999999999999997,0.30000000000000004,3,1

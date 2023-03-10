@@ -1,121 +1,121 @@
 ,category,film,predictions,probability_loses,probability_wins
-0,actor in a leading role,Elvis,False,0.8624136859831577,0.13758631401684213
-1,actor in a leading role,The Banshees of Inisherin,False,0.7048959888106789,0.29510401118932134
-2,actor in a leading role,The Whale,False,0.7818572770827026,0.2181427229172971
-3,actor in a leading role,Aftersun,False,0.925500589403567,0.07449941059643292
-4,actor in a leading role,Living,False,0.8282468363963456,0.1717531636036541
-5,actor in a supporting role,The Banshees of Inisherin,False,0.672089361680163,0.3279106383198372
-6,actor in a supporting role,Causeway,False,0.852057450024656,0.14794254997534387
-7,actor in a supporting role,The Fabelmans,False,0.7365421884916095,0.2634578115083904
-8,actor in a supporting role,The Banshees of Inisherin,False,0.672089361680163,0.3279106383198372
-9,actor in a supporting role,Everything Everywhere All at Once,False,0.7789976010336825,0.2210023989663175
-10,actress in a leading role,Tár,False,0.6911341021626844,0.3088658978373152
-11,actress in a leading role,Blonde,False,0.874765148688472,0.12523485131152787
-12,actress in a leading role,To Leslie,False,0.735486019823227,0.26451398017677297
-13,actress in a leading role,The Fabelmans,False,0.7224080127371602,0.2775919872628397
-14,actress in a leading role,Everything Everywhere All at Once,False,0.6334627797809397,0.36653722021906043
-15,actress in a supporting role,Black Panther: Wakanda Forever,False,0.7641888542482181,0.23581114575178203
-16,actress in a supporting role,The Whale,False,0.7716361468615724,0.22836385313842733
-17,actress in a supporting role,The Banshees of Inisherin,False,0.6925725850361648,0.3074274149638353
-18,actress in a supporting role,Everything Everywhere All at Once,False,0.773857816087446,0.22614218391255408
-19,actress in a supporting role,Everything Everywhere All at Once,False,0.773857816087446,0.22614218391255408
-20,animated feature film,Guillermo del Toro's Pinocchio,False,0.7289852264769712,0.2710147735230287
-21,animated feature film,Marcel the Shell with Shoes On,False,0.7883072282378449,0.21169277176215498
-22,animated feature film,Puss in Boots: The Last Wish,False,0.779625661354413,0.2203743386455866
-23,animated feature film,The Sea Beast,False,0.8450110606437967,0.15498893935620314
-24,animated feature film,Turning Red,False,0.7758932198087429,0.22410678019125727
-25,cinematography,All Quiet on the Western Front,False,0.7699889730066241,0.23001102699337606
-26,cinematography,"Bardo, False Chronicle of a Handful of Truths",False,0.8466976714571007,0.15330232854289913
-27,cinematography,Elvis,False,0.7970933868957809,0.20290661310421895
-28,cinematography,Empire of Light,False,0.7792341143195296,0.22076588568047026
-29,cinematography,Tár,False,0.6836747970552147,0.316325202944785
-30,costume design,Babylon,False,0.8435030557598189,0.15649694424018115
-31,costume design,Black Panther: Wakanda Forever,False,0.7489077057545146,0.2510922942454853
-32,costume design,Elvis,False,0.8280243699271752,0.17197563007282482
-33,costume design,Everything Everywhere All at Once,False,0.7716355938652236,0.22836440613477632
-34,costume design,Mrs. Harris Goes to Paris,False,0.8222371606603172,0.17776283933968245
-35,directing,The Banshees of Inisherin,False,0.6836583852127266,0.3163416147872733
-36,directing,Everything Everywhere All at Once,False,0.7152635542752627,0.28473644572473744
-37,directing,The Fabelmans,False,0.7270448986180628,0.2729551013819369
-38,directing,Tár,False,0.720748592771233,0.27925140722876696
-39,directing,Triangle of Sadness,False,0.8289195709817697,0.1710804290182301
-40,documentary feature film,All That Breathes,False,0.6029345926159856,0.39706540738401436
-41,documentary feature film,All the Beauty and the Bloodshed,False,0.7091510583499603,0.29084894165003966
-42,documentary feature film,Fire of Love,False,0.7971953537966973,0.20280464620330285
-43,documentary feature film,A House Made of Splinters,False,0.7217550874057124,0.27824491259428774
-44,documentary feature film,Navalny,False,0.565728629648008,0.43427137035199226
-45,documentary short film,The Elephant Whisperers,False,0.6582965850941568,0.3417034149058433
-46,documentary short film,Haulout,False,0.713373640330463,0.2866263596695373
-47,documentary short film,How Do You Measure a Year?,False,0.8726637064300447,0.12733629356995532
-48,documentary short film,The Martha Mitchell Effect,False,0.5945844865703038,0.40541551342969634
-49,documentary short film,Stranger at the Gate,False,0.5944624981640029,0.4055375018359971
-50,film editing,The Banshees of Inisherin,False,0.6833387072250947,0.3166612927749054
-51,film editing,Elvis,False,0.8679218178512896,0.13207818214871028
-52,film editing,Everything Everywhere All at Once,False,0.7731740554036852,0.22682594459631478
-53,film editing,Tár,False,0.6923456276255996,0.3076543723744003
-54,film editing,Top Gun: Maverick,False,0.7140131631694395,0.2859868368305604
-55,international feature film,All Quiet on the Western Front,False,0.6870636462855579,0.31293635371444223
-56,international feature film,"Argentina, 1985",False,0.7983308975470567,0.2016691024529434
-57,international feature film,Close,False,0.8246397784592253,0.1753602215407744
-58,international feature film,EO,False,0.8382142540612026,0.1617857459387972
-59,international feature film,The Quiet Girl,False,0.826844997874506,0.17315500212549384
-60,makeup and hairstyling,All Quiet on the Western Front,False,0.8070024662599973,0.19299753374000275
-61,makeup and hairstyling,The Batman,False,0.7864386714974831,0.21356132850251652
-62,makeup and hairstyling,Black Panther: Wakanda Forever,False,0.7812820442123757,0.21871795578762435
-63,makeup and hairstyling,Elvis,False,0.8341420810448861,0.16585791895511373
-64,makeup and hairstyling,The Whale,False,0.7734090012206337,0.2265909987793661
-65,music (original score),All Quiet on the Western Front,False,0.8170024662599974,0.18299753374000274
-66,music (original score),Babylon,False,0.8364605334243265,0.16353946657567342
-67,music (original score),The Banshees of Inisherin,False,0.5979789052908405,0.4020210947091596
-68,music (original score),Everything Everywhere All at Once,False,0.7531740554036852,0.24682594459631477
-69,music (original score),The Fabelmans,False,0.777629017419831,0.22237098258016888
-70,music (original song),Tell It like a Woman,False,0.8191627662051695,0.18083723379483058
-71,music (original song),Top Gun: Maverick,False,0.7204837378703585,0.2795162621296414
-72,music (original song),Black Panther: Wakanda Forever,False,0.76137611378688,0.23862388621312008
-73,music (original song),RRR,False,0.7552855216915855,0.24471447830841458
-74,music (original song),Everything Everywhere All at Once,False,0.7716355938652236,0.22836440613477632
-75,best picture,All Quiet on the Western Front,False,0.8110541903979284,0.18894580960207172
-76,best picture,Avatar: The Way of Water,False,0.7927406377321523,0.20725936226784786
-77,best picture,The Banshees of Inisherin,False,0.7248671330744066,0.2751328669255935
-78,best picture,Elvis,False,0.8594419186832998,0.1405580813167
-79,best picture,Everything Everywhere All at Once,False,0.7670762068920436,0.23292379310795638
-80,best picture,The Fabelmans,False,0.8085071129965391,0.19149288700346084
-81,best picture,Tár,False,0.7144025711431787,0.2855974288568211
-82,best picture,Top Gun: Maverick,False,0.6982266757064022,0.30177332429359743
-83,best picture,Triangle of Sadness,False,0.8105622442170578,0.1894377557829419
-84,best picture,Women Talking,False,0.8284269210674096,0.17157307893259038
-85,production design,All Quiet on the Western Front,False,0.7279195682961344,0.27208043170386575
-86,production design,Avatar: The Way of Water,False,0.7464642969751121,0.2535357030248874
-87,production design,Babylon,False,0.8464378785941955,0.15356212140580464
-88,production design,Elvis,False,0.78543474825422,0.21456525174577984
-89,production design,The Fabelmans,False,0.7384262326346622,0.2615737673653376
-90,short film (animated),"The Boy, the Mole, the Fox and the Horse",False,0.796898057961491,0.20310194203850884
-91,short film (animated),The Flying Sailor,False,0.8688504075925308,0.13114959240746893
-92,short film (animated),Ice Merchants,False,0.6708761100209162,0.3291238899790838
-93,short film (animated),My Year of Dicks,False,0.7286121509495973,0.27138784905040253
-94,short film (animated),An Ostrich Told Me the World Is Fake and I Think I Believe It,False,0.7987800939979687,0.20121990600203132
-95,short film (live action),An Irish Goodbye,False,0.8464996264345076,0.15350037356549193
-96,short film (live action),Ivalu,False,0.9022702810700722,0.09772971892992759
-97,short film (live action),Le Pupille,False,0.7878971256996743,0.21210287430032582
-98,short film (live action),Night Ride,False,0.8134126987171999,0.18658730128280016
-99,short film (live action),The Red Suitcase,False,0.8025576938065396,0.19744230619346032
-100,sound,All Quiet on the Western Front,False,0.8170024662599973,0.18299753374000274
-101,sound,Avatar: The Way of Water,False,0.7482842969751121,0.25171570302488744
-102,sound,The Batman,False,0.796706947359552,0.20329305264044756
-103,sound,Elvis,False,0.8624136859831577,0.13758631401684213
-104,sound,Top Gun: Maverick,False,0.7249469045090905,0.27505309549090934
-105,visual effects,All Quiet on the Western Front,False,0.7145100877497366,0.28548991225026354
-106,visual effects,Avatar: The Way of Water,False,0.7564642969751121,0.24353570302488747
-107,visual effects,The Batman,False,0.7745423373611806,0.2254576626388191
-108,visual effects,Black Panther: Wakanda Forever,False,0.7728074679411893,0.22719253205881074
-109,visual effects,Top Gun: Maverick,False,0.6944489611773855,0.30555103882261414
-110,writing (adapted screenplay),All Quiet on the Western Front,False,0.7975024662599973,0.20249753374000273
-111,writing (adapted screenplay),Glass Onion: A Knives Out Mystery,False,0.8111154997920003,0.18888450020799952
-112,writing (adapted screenplay),Living,False,0.8282468363963456,0.1717531636036541
-113,writing (adapted screenplay),Top Gun: Maverick,False,0.7089206637162687,0.29107933628373106
-114,writing (adapted screenplay),Women Talking,False,0.8120376732587131,0.18796232674128685
-115,writing (original screenplay),The Banshees of Inisherin,False,0.6173872358866246,0.38261276411337547
-116,writing (original screenplay),Everything Everywhere All at Once,False,0.7649689271985569,0.23503107280144298
-117,writing (original screenplay),The Fabelmans,False,0.7272654422433411,0.2727345577566588
-118,writing (original screenplay),Tár,False,0.6856691790776867,0.31433082092231307
-119,writing (original screenplay),Triangle of Sadness,False,0.79864729959611,0.20135270040388967
+0,actor in a leading role,Elvis,False,0.7062072630031505,0.2937927369968494
+1,actor in a leading role,The Banshees of Inisherin,False,0.6365175870525352,0.3634824129474649
+2,actor in a leading role,The Whale,False,0.7561248551113137,0.24387514488868633
+3,actor in a leading role,Aftersun,False,0.8543502215405813,0.14564977845941862
+4,actor in a leading role,Living,False,0.8090359035561155,0.1909640964438846
+5,actor in a supporting role,The Banshees of Inisherin,False,0.6396580265176482,0.36034197348235186
+6,actor in a supporting role,Causeway,False,0.8241557593654207,0.1758442406345792
+7,actor in a supporting role,The Fabelmans,False,0.6717106171607132,0.3282893828392867
+8,actor in a supporting role,The Banshees of Inisherin,False,0.6396580265176482,0.36034197348235186
+9,actor in a supporting role,Everything Everywhere All at Once,False,0.6119594714454117,0.38804052855458804
+10,actress in a leading role,Tár,False,0.7531988391273576,0.24680116087264245
+11,actress in a leading role,Blonde,False,0.8634865390134939,0.13651346098650616
+12,actress in a leading role,To Leslie,False,0.8371209856256776,0.16287901437432226
+13,actress in a leading role,The Fabelmans,False,0.6628815427340023,0.33711845726599754
+14,actress in a leading role,Everything Everywhere All at Once,False,0.5751042900135714,0.4248957099864286
+15,actress in a supporting role,Black Panther: Wakanda Forever,False,0.7783575747141686,0.22164242528583153
+16,actress in a supporting role,The Whale,False,0.7561248551113137,0.24387514488868633
+17,actress in a supporting role,The Banshees of Inisherin,False,0.6127600112949595,0.38723998870504067
+18,actress in a supporting role,Everything Everywhere All at Once,False,0.583978293203364,0.41602170679663586
+19,actress in a supporting role,Everything Everywhere All at Once,False,0.583978293203364,0.41602170679663586
+20,animated feature film,Guillermo del Toro's Pinocchio,False,0.7882998663640868,0.21170013363591333
+21,animated feature film,Marcel the Shell with Shoes On,False,0.7773098093906422,0.22269019060935777
+22,animated feature film,Puss in Boots: The Last Wish,False,0.7509486539764074,0.24905134602359255
+23,animated feature film,The Sea Beast,False,0.8351232716714385,0.16487672832856137
+24,animated feature film,Turning Red,False,0.8162180820665219,0.1837819179334782
+25,cinematography,All Quiet on the Western Front,False,0.6701209181454925,0.3298790818545074
+26,cinematography,"Bardo, False Chronicle of a Handful of Truths",False,0.8309609133856327,0.16903908661436734
+27,cinematography,Elvis,False,0.6939684570330013,0.30603154296699864
+28,cinematography,Empire of Light,False,0.8713613495301793,0.12863865046982056
+29,cinematography,Tár,False,0.7473639911432202,0.25263600885677995
+30,costume design,Babylon,False,0.7903099895480921,0.20969001045190794
+31,costume design,Black Panther: Wakanda Forever,False,0.8183575747141686,0.1816424252858315
+32,costume design,Elvis,False,0.7110790578749453,0.28892094212505454
+33,costume design,Everything Everywhere All at Once,False,0.6077358689609398,0.3922641310390601
+34,costume design,Mrs. Harris Goes to Paris,False,0.8502724591592218,0.1497275408407781
+35,directing,The Banshees of Inisherin,False,0.6809937775287257,0.3190062224712744
+36,directing,Everything Everywhere All at Once,False,0.6135820228070936,0.38641797719290627
+37,directing,The Fabelmans,False,0.6880257960613847,0.3119742039386152
+38,directing,Tár,False,0.7769949340346568,0.22300506596534325
+39,directing,Triangle of Sadness,False,0.795639469672471,0.204360530327529
+40,documentary feature film,All That Breathes,False,0.6798514493568228,0.3201485506431771
+41,documentary feature film,All the Beauty and the Bloodshed,False,0.5735523906632379,0.426447609336762
+42,documentary feature film,Fire of Love,False,0.6474053784136822,0.3525946215863176
+43,documentary feature film,A House Made of Splinters,False,0.7260440097889465,0.2739559902110535
+44,documentary feature film,Navalny,False,0.7400108412437056,0.2599891587562943
+45,documentary short film,The Elephant Whisperers,False,0.6313727740802864,0.3686272259197137
+46,documentary short film,Haulout,False,0.5801152235136336,0.4198847764863665
+47,documentary short film,How Do You Measure a Year?,False,0.7754937581213717,0.2245062418786285
+48,documentary short film,The Martha Mitchell Effect,False,0.6370453327598796,0.36295466724012043
+49,documentary short film,Stranger at the Gate,False,0.7290812828259665,0.2709187171740336
+50,film editing,The Banshees of Inisherin,False,0.6365175870525352,0.3634824129474649
+51,film editing,Elvis,False,0.7062072630031505,0.2937927369968494
+52,film editing,Everything Everywhere All at Once,False,0.6077358689609398,0.3922641310390601
+53,film editing,Tár,False,0.7473639911432202,0.25263600885677995
+54,film editing,Top Gun: Maverick,False,0.7228094455319558,0.27719055446804414
+55,international feature film,All Quiet on the Western Front,False,0.5470140800821327,0.45298591991786724
+56,international feature film,"Argentina, 1985",False,0.7576664777630784,0.24233352223692162
+57,international feature film,Close,False,0.7890780295964942,0.21092197040350602
+58,international feature film,EO,False,0.8129853028081112,0.18701469719188868
+59,international feature film,The Quiet Girl,False,0.778569804581272,0.22143019541872822
+60,makeup and hairstyling,All Quiet on the Western Front,False,0.6327296137976665,0.3672703862023335
+61,makeup and hairstyling,The Batman,False,0.7660882380572724,0.23391176194272756
+62,makeup and hairstyling,Black Panther: Wakanda Forever,False,0.7445013655638418,0.2554986344361583
+63,makeup and hairstyling,Elvis,False,0.7062072630031505,0.2937927369968494
+64,makeup and hairstyling,The Whale,False,0.7561248551113137,0.24387514488868633
+65,music (original score),All Quiet on the Western Front,False,0.5788437279117806,0.42115627208821943
+66,music (original score),Babylon,False,0.7903099895480921,0.20969001045190794
+67,music (original score),The Banshees of Inisherin,False,0.6740395291627125,0.32596047083728746
+68,music (original score),Everything Everywhere All at Once,False,0.518555865427995,0.481444134572005
+69,music (original score),The Fabelmans,False,0.6349092320258426,0.3650907679741573
+70,music (original song),Tell It like a Woman,False,0.8800940147849461,0.11990598521505375
+71,music (original song),Top Gun: Maverick,False,0.7172388192521268,0.282761180747873
+72,music (original song),Black Panther: Wakanda Forever,False,0.7665759655187663,0.2334240344812338
+73,music (original song),RRR,False,0.7257144857040895,0.2742855142959105
+74,music (original song),Everything Everywhere All at Once,False,0.6077358689609398,0.3922641310390601
+75,best picture,All Quiet on the Western Front,False,0.6571046137976664,0.34289538620233345
+76,best picture,Avatar: The Way of Water,False,0.8230728666790115,0.17692713332098856
+77,best picture,The Banshees of Inisherin,False,0.600237508598215,0.3997624914017851
+78,best picture,Elvis,False,0.7209764937723813,0.2790235062276186
+79,best picture,Everything Everywhere All at Once,False,0.657867737092808,0.342132262907192
+80,best picture,The Fabelmans,False,0.7150137891304003,0.2849862108695995
+81,best picture,Tár,False,0.786609971680717,0.21339002831928308
+82,best picture,Top Gun: Maverick,False,0.7933824197427546,0.20661758025724533
+83,best picture,Triangle of Sadness,False,0.8128985394832763,0.18710146051672372
+84,best picture,Women Talking,False,0.821257540383946,0.17874245961605403
+85,production design,All Quiet on the Western Front,False,0.6327296137976665,0.3672703862023335
+86,production design,Avatar: The Way of Water,False,0.7733788241333168,0.22662117586668312
+87,production design,Babylon,False,0.7903099895480921,0.20969001045190794
+88,production design,Elvis,False,0.7062072630031505,0.2937927369968494
+89,production design,The Fabelmans,False,0.6914529713054308,0.30854702869456896
+90,short film (animated),"The Boy, the Mole, the Fox and the Horse",False,0.8030024952666714,0.19699750473332855
+91,short film (animated),The Flying Sailor,False,0.8867599437658177,0.11324005623418222
+92,short film (animated),Ice Merchants,False,0.6581979800563934,0.34180201994360665
+93,short film (animated),My Year of Dicks,False,0.7628474164580659,0.23715258354193405
+94,short film (animated),An Ostrich Told Me the World Is Fake and I Think I Believe It,False,0.813062545075472,0.18693745492452787
+95,short film (live action),An Irish Goodbye,False,0.7735166663004551,0.2264833336995448
+96,short film (live action),Ivalu,False,0.7845096265806458,0.21549037341935431
+97,short film (live action),Le Pupille,False,0.7382961545085149,0.2617038454914852
+98,short film (live action),Night Ride,False,0.7851501152581065,0.21484988474189357
+99,short film (live action),The Red Suitcase,False,0.7570495845887614,0.2429504154112387
+100,sound,All Quiet on the Western Front,False,0.6327296137976665,0.3672703862023335
+101,sound,Avatar: The Way of Water,False,0.7733788241333168,0.22662117586668312
+102,sound,The Batman,False,0.7967813073642032,0.20321869263579687
+103,sound,Elvis,False,0.7062072630031505,0.2937927369968494
+104,sound,Top Gun: Maverick,False,0.7172388192521268,0.282761180747873
+105,visual effects,All Quiet on the Western Front,False,0.5596390899090022,0.44036091009099776
+106,visual effects,Avatar: The Way of Water,False,0.7733788241333168,0.22662117586668312
+107,visual effects,The Batman,False,0.7967813073642032,0.20321869263579687
+108,visual effects,Black Panther: Wakanda Forever,False,0.7783575747141686,0.22164242528583153
+109,visual effects,Top Gun: Maverick,False,0.7172388192521268,0.282761180747873
+110,writing (adapted screenplay),All Quiet on the Western Front,False,0.5962078746672317,0.40379212533276826
+111,writing (adapted screenplay),Glass Onion: A Knives Out Mystery,False,0.7904158203947257,0.20958417960527428
+112,writing (adapted screenplay),Living,False,0.7341536755756313,0.26584632442436873
+113,writing (adapted screenplay),Top Gun: Maverick,False,0.7172388192521268,0.282761180747873
+114,writing (adapted screenplay),Women Talking,False,0.7715634978382514,0.2284365021617486
+115,writing (original screenplay),The Banshees of Inisherin,False,0.6461250906600388,0.35387490933996135
+116,writing (original screenplay),Everything Everywhere All at Once,False,0.6077358689609398,0.3922641310390601
+117,writing (original screenplay),The Fabelmans,False,0.6914529713054308,0.30854702869456896
+118,writing (original screenplay),Tár,False,0.7473639911432202,0.25263600885677995
+119,writing (original screenplay),Triangle of Sadness,False,0.7632044969375816,0.23679550306241834
