@@ -1,4 +1,6 @@
 # Academy Award Prediction Tool
+Check out [this blog post](https://andrewnolan.dev/blogs/AcademyAwardsPrediction) about this project!
+
 A basic data collection and prediction pipeline for the Academy Awards.
 
 - Webscrape Letterboxd and Twitter to gather data
